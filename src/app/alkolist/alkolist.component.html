@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Perustuu 10.04.2017 Hinnastoon. Haettu 7.7.2018</h4>
+  <p>Jokainen alkon tuote järjestettynä halvimmasta kännistä kalleimpaan.</p>
+</div>
+
+<hr>
+<button style="margin-top: 12px;" type="button" class="btn btn-primary" (click)="resetCategories()">Näytä Kaikki</button>&nbsp;<br>
+<hr>
+<ng-container *ngFor="let categoryString of categories">
+  <button style="margin-top: 12px;" type="button" class="btn btn-primary" [ngClass]="{ 'btn-primary': this.enabledCategories.indexOf(categoryString) !== -1, 'btn-outline-primary': this.enabledCategories.indexOf(categoryString) === -1 }" (click)="categoryButtonClicked(categoryString)">{{categoryString}}</button>&nbsp;
+</ng-container>
+<hr>
+
+
+
+<br>
+
+<table>
+  <tr>
+    <th>Nimi</th>
+    <th>Tyyppi</th>
+    <th>Pullokoko</th>
+    <th>%-Alkoholia</th>
+    <th>Pakkaustyyppi</th>
+    <th>Hinta</th>
+    <th>Euro/L</th>
+    <th>1L Etanoolia</th>
+  </tr>
+  <tr *ngFor="let alcoholProduct of alkoService.alkoObj | slice:0:productRowLimit; let i=index">
+    <ng-container *ngIf="enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1">
+    <td>{{alcoholProduct.Nimi}}</td>
+    <td>{{alcoholProduct.Tyyppi}}</td>
+    <td>{{alcoholProduct.Pullokoko}}L</td>
+    <td>{{alcoholProduct.ProsAlkohol}}%</td>
+    <td>{{alcoholProduct.Pakkaustyyppi}}</td>
+    <td>{{alcoholProduct.Hinta}}€</td>
+    <td>{{alcoholProduct.Litrahinta}}€/L</td>
+    <td>{{alcoholProduct.EurPerLAlkohol}}€</td>
+    </ng-container>
+  </tr>
+</table>
