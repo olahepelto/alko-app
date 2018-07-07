@@ -1,47 +1,96 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
 <div class="alert alert-success" role="alert">
-  <h4 class="alert-heading">Perustuu 10.04.2017 Hinnastoon. Haettu 7.7.2018</h4>
-  <p>Jokainen alkon tuote järjestettynä halvimmasta kännistä kalleimpaan. Täältä löydät helposti mm. halvimmat alahyllyn viinit. </p>
+  <h5 class="alert-heading">Tuotteet päivitetty 7.7.2018.</h5>
+  <p>Jokainen alkon tuote järjestettynä halvimmasta kännistä kalleimpaan. Saatavuudet haetaan alkon sivuilta 12h välein.<br>
+  </p>
+</div>
+<div class="alert alert-warning" *ngIf="alkoService.selectedAlko == undefined">
+  <p><strong>Huom!</strong> Saatavuustietoja varten sinun pitää valita alkon toimipiste. <a href="#" class="alert-link"
+                                                                                            data-toggle="modal"
+                                                                                            data-target="#myModal">Valitse
+    alko</a></p>
+</div>
+<hr>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="opacity: 1;">
+  <div class="modal-dialog" role="document" style="transform: translate(0,25%);">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Valitse Alko</h4>
+      </div>
+      <div class="modal-body" style="overflow-y:scroll; height:500px;">
+        <a href="#" *ngFor="let alkoStore of alkoService.alko_stores" (click)="alkoService.setSelectedAlko(alkoStore)"
+           data-dismiss="modal">{{alkoStore}}<br></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-<hr>
-<button style="margin-top: 12px;" type="button" class="btn " [ngClass]="{ 'btn-primary': productRowLimit === 500, 'btn-outline-primary': productRowLimit !== 500 }" (click)="productRowLimit=500">Näytä 500</button>&nbsp;
-<button style="margin-top: 12px;" type="button" class="btn " [ngClass]="{ 'btn-primary': productRowLimit === 1000, 'btn-outline-primary': productRowLimit !== 1000 }" (click)="productRowLimit=1000">Näytä 1000</button>&nbsp;
-<button style="margin-top: 12px;" type="button" class="btn " [ngClass]="{ 'btn-primary': productRowLimit === 2000, 'btn-outline-primary': productRowLimit !== 2000 }" (click)="productRowLimit=2000">Näytä 2000</button>&nbsp;
-<button style="margin-top: 12px;" type="button" class="btn " [ngClass]="{ 'btn-primary': productRowLimit === 50000, 'btn-outline-primary': productRowLimit !== 50000 }" (click)="productRowLimit=50000">Näytä Kaikki</button>&nbsp;
-<hr>
-<button style="margin-top: 12px;" type="button" class="btn btn-primary" (click)="resetCategories()">Kaikki Kategoriat</button>&nbsp;<br>
-<ng-container *ngFor="let categoryString of categories">
-  <button style="margin-top: 12px;" type="button" class="btn btn-primary" [ngClass]="{ 'btn-primary': this.enabledCategories.indexOf(categoryString) !== -1, 'btn-outline-primary': this.enabledCategories.indexOf(categoryString) === -1 }" (click)="categoryButtonClicked(categoryString)">{{categoryString}}</button>&nbsp;
+
+<!--<button style="margin-top: 12px;" type="button" class="btn btn-primary" (click)="resetCategories()">Kaikki Kategoriat</button>&nbsp;<br>-->
+<ng-container *ngFor="let category of categories">
+  <button style="margin-top: 12px;" type="button" class="btn btn-primary"
+          [ngClass]="{ 'btn-primary': this.alkoService.enabledCategories.indexOf(category.cat[0]) !== -1, 'btn-outline-primary': this.alkoService.enabledCategories.indexOf(category.cat[0]) === -1 }"
+          (click)="categoryButtonClicked(category.cat)">{{category.name}}
+  </button>&nbsp;
 </ng-container>
 <hr>
 
+<nav class="d-flex justify-content-center" aria-label="...">
+  <ul class="pagination">
+    <li class="page-item disabled" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage - 1) === -1}"
+        (click)="selectPage(activePage - 1, alkoService.pagesList.indexOf(activePage - 1) !== -1)">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+
+    <li *ngFor="let page of alkoService.pagesList" class="page-item" [ngClass]="{'active': activePage === page}"
+        (click)="selectPage(page, true)">
+      <a class="page-link" href="#">{{page + 1}} </a>
+    </li>
+
+    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage + 1) === -1}"
+        (click)="selectPage(activePage + 1, alkoService.pagesList.indexOf(activePage + 1) !== -1)">
+      <a class="page-link" href="#">Next</a>
+    </li>
+
+  </ul>
+</nav>
 
 
 <br>
 
-<table>
-  <tr>
-    <th>Nimi</th>
-    <th>Tyyppi</th>
-    <th>Pullokoko</th>
-    <th>%-Alkoholia</th>
-    <th>Pakkaustyyppi</th>
-    <th>Hinta</th>
-    <th>Euro/L</th>
-    <th>1L Etanoolia</th>
-  </tr>
-  <tr *ngFor="let alcoholProduct of alkoService.alkoObj | slice:0:productRowLimit; let i=index">
-    <ng-container *ngIf="enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1">
-    <td>{{alcoholProduct.Nimi}}</td>
-    <td>{{alcoholProduct.Tyyppi}}</td>
-    <td>{{alcoholProduct.Pullokoko}}L</td>
-    <td>{{alcoholProduct.ProsAlkohol}}%</td>
-    <td>{{alcoholProduct.Pakkaustyyppi}}</td>
-    <td>{{alcoholProduct.Hinta}}€</td>
-    <td>{{alcoholProduct.Litrahinta}}€/L</td>
-    <td>{{alcoholProduct.EurPerLAlkohol}}€</td>
+<div class="container rounded" style="min-width: 80%;">
+  <div class="row">
+    <div class="col">Saatavuus</div>
+    <div class="col">Nimi</div>
+    <div class="col">Tyyppi</div>
+    <div class="col-sm-1">Pullokoko</div>
+    <div class="col-sm-1">%-Alkoholia</div>
+    <div class="col-md-1">Pakkaustyyppi</div>
+    <div class="col-sm-1">Hinta</div>
+    <div class="col-sm-1">Euro/L</div>
+    <div class="col-sm-1">1L Etanolia</div>
+  </div>
+  <div class="row" style="background-color: #a0beac3d; margin-bottom: 2px;"
+       *ngFor="let alcoholProduct of alkoService.activeProducts | slice:activePage * alkoService.ITEMS_PER_PAGE : (activePage + 1) * alkoService.ITEMS_PER_PAGE">
+    <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1">
+      <div class="col" style="text-align: left;">
+        <span style="color: green;"
+              *ngIf="listContainsStore(alkoService.selectedAlko, alkoService.availabilityDataObj[alcoholProduct.Numero])">Saatavilla</span>
+        <span style="color: red;"
+              *ngIf="!listContainsStore(alkoService.selectedAlko, alkoService.availabilityDataObj[alcoholProduct.Numero])">Ei Saatavilla</span>
+      </div>
+      <div class="col" style="text-align: left;">{{alcoholProduct.Nimi}}</div>
+      <div class="col" style="text-align: left;">{{alcoholProduct.Tyyppi}}</div>
+      <div class="col-sm-1" style="text-align: left; width: 50px;">{{alcoholProduct.Pullokoko}}L</div>
+      <div class="col-sm-1" style="text-align: left;">{{alcoholProduct.ProsAlkohol}}%</div>
+      <div class="col-md-1" style="text-align: left;">{{alcoholProduct.Pakkaustyyppi}}</div>
+      <div class="col-sm-1" style="text-align: left;">{{alcoholProduct.Hinta}}€</div>
+      <div class="col-sm-1" style="text-align: left;">{{alcoholProduct.Litrahinta}}€/L</div>
+      <div class="col-sm-1" style="text-align: left;">{{alcoholProduct.EurPerLAlkohol}}€</div>
     </ng-container>
-  </tr>
-</table>
+  </div>
+</div>

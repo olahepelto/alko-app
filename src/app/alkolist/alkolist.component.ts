@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {AlkoService} from '../alko.service';
+
 
 @Component({
   selector: 'app-alkolist',
@@ -8,46 +9,28 @@ import {AlkoService} from '../alko.service';
 })
 export class AlkolistComponent implements OnInit {
 
-  public productRowLimit = 500;
+  @ViewChild('myModal') myModal;
+
+  public activeProducts = [];
+
+  public activePage = 0;
 
   public categories = [
-    "punaviinit",
-    "roseeviinit",
-    "valkoviinit",
-    "rommit",
-    "konjakit",
-    "viskit",
-    "oluet",
-    "siiderit",
-    "juomasekoitukset",
-    "alkoholittomat",
-    "lahja- ja juomatarvikkeet",
-    "kuohuviinit & samppanjat",
-    "Jälkiruokaviinit, väkevöidyt ja muut viinit",
-    "Brandyt, Armanjakit ja Calvadosit",
-    "Ginit ja maustetut viinat",
-    "Liköörit ja Katkerot",
-    "vodkat ja viinat"
+    {name: 'Viinit', cat: ['punaviinit', 'roseeviinit', 'valkoviinit', 'Jälkiruokaviinit, väkevöidyt ja muut viinit']},
+    {name: 'Kuohuviinit', cat: ['kuohuviinit & samppanjat']},
+    {name: 'Rommit', cat: ['rommit']},
+    {name: 'konjakit', cat: ['konjakit']},
+    {name: 'viskit', cat: ['viskit']},
+    {name: 'oluet', cat: ['oluet']},
+    {name: 'siiderit', cat: ['siiderit']},
+    {name: 'juomasekoitukset', cat: ['juomasekoitukset']},
+    {name: 'Brandyt, Armanjakit ja Calvadosit', cat: ['Brandyt, Armanjakit ja Calvadosit']},
+    {name: 'Ginit ja maustetut viinat', cat: ['Ginit ja maustetut viinat']},
+    {name: 'Liköörit ja Katkerot', cat: ['Liköörit ja Katkerot']},
+    {name: 'vodkat ja viinat', cat: ['vodkat ja viinat']},
+    {name: 'Puistokemisteille', cat: ['lasinpesuneste']},
   ];
-  public enabledCategories = [
-    "punaviinit",
-    "roseeviinit",
-    "valkoviinit",
-    "rommit",
-    "konjakit",
-    "viskit",
-    "oluet",
-    "siiderit",
-    "juomasekoitukset",
-    "alkoholittomat",
-    "lahja- ja juomatarvikkeet",
-    "kuohuviinit & samppanjat",
-    "Jälkiruokaviinit, väkevöidyt ja muut viinit",
-    "Brandyt, Armanjakit ja Calvadosit",
-    "Ginit ja maustetut viinat",
-    "Liköörit ja Katkerot",
-    "vodkat ja viinat"
-  ];
+
 
   constructor(public alkoService : AlkoService) { }
 
@@ -55,18 +38,39 @@ export class AlkolistComponent implements OnInit {
 
   }
 
-  public categoryButtonClicked(category : string){
-    console.log(this.enabledCategories);
-    const index = this.enabledCategories.indexOf(category);
-    if(index !== -1){
-      this.enabledCategories.splice(index, 1);
-    }else{
-      this.enabledCategories.push(category);
-    }
-    console.log(this.enabledCategories);
+  public openAlkoSelectDialog() {
+    this.myModal.nativeElement.className = 'modal fade show';
   }
+
+  public closeAlkoSelectDialog() {
+    this.myModal.nativeElement.className = 'modal hide';
+  }
+
+  public selectPage(page: any, doIt: boolean) {
+    if (doIt) {
+      this.activePage = page;
+    }
+  }
+
+  public listContainsStore(store, list) {
+    for (let availObj of list) {
+      if (availObj.storeName == store) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  public categoryButtonClicked(categories: any) {
+    categories.forEach((category) => {
+      this.flipCategory(category);
+    });
+
+    this.alkoService.generatePageData();
+  }
+
   public resetCategories(){
-    this.enabledCategories = [
+    this.alkoService.enabledCategories = [
       "punaviinit",
       "roseeviinit",
       "valkoviinit",
@@ -76,8 +80,6 @@ export class AlkolistComponent implements OnInit {
       "oluet",
       "siiderit",
       "juomasekoitukset",
-      "alkoholittomat",
-      "lahja- ja juomatarvikkeet",
       "kuohuviinit & samppanjat",
       "Jälkiruokaviinit, väkevöidyt ja muut viinit",
       "Brandyt, Armanjakit ja Calvadosit",
@@ -85,6 +87,15 @@ export class AlkolistComponent implements OnInit {
       "Liköörit ja Katkerot",
       "vodkat ja viinat"
     ];
+  }
+
+  private flipCategory(category) {
+    const index = this.alkoService.enabledCategories.indexOf(category);
+    if (index !== -1) {
+      this.alkoService.enabledCategories.splice(index, 1);
+    } else {
+      this.alkoService.enabledCategories.push(category);
+    }
   }
 
 }
