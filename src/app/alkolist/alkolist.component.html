@@ -2,12 +2,16 @@
 
 <div class="alert alert-success" role="alert">
   <h4 class="alert-heading">Perustuu 10.04.2017 Hinnastoon. Haettu 7.7.2018</h4>
-  <p>Jokainen alkon tuote järjestettynä halvimmasta kännistä kalleimpaan.</p>
+  <p>Jokainen alkon tuote järjestettynä halvimmasta kännistä kalleimpaan. Täältä löydät helposti mm. halvimmat alahyllyn viinit. </p>
 </div>
 
 <hr>
-<button style="margin-top: 12px;" type="button" class="btn btn-primary" (click)="resetCategories()">Näytä Kaikki</button>&nbsp;<br>
+<button style="margin-top: 12px;" type="button" class="btn " [ngClass]="{ 'btn-primary': productRowLimit === 500, 'btn-outline-primary': productRowLimit !== 500 }" (click)="productRowLimit=500">Näytä 500</button>&nbsp;
+<button style="margin-top: 12px;" type="button" class="btn " [ngClass]="{ 'btn-primary': productRowLimit === 1000, 'btn-outline-primary': productRowLimit !== 1000 }" (click)="productRowLimit=1000">Näytä 1000</button>&nbsp;
+<button style="margin-top: 12px;" type="button" class="btn " [ngClass]="{ 'btn-primary': productRowLimit === 2000, 'btn-outline-primary': productRowLimit !== 2000 }" (click)="productRowLimit=2000">Näytä 2000</button>&nbsp;
+<button style="margin-top: 12px;" type="button" class="btn " [ngClass]="{ 'btn-primary': productRowLimit === 50000, 'btn-outline-primary': productRowLimit !== 50000 }" (click)="productRowLimit=50000">Näytä Kaikki</button>&nbsp;
 <hr>
+<button style="margin-top: 12px;" type="button" class="btn btn-primary" (click)="resetCategories()">Kaikki Kategoriat</button>&nbsp;<br>
 <ng-container *ngFor="let categoryString of categories">
   <button style="margin-top: 12px;" type="button" class="btn btn-primary" [ngClass]="{ 'btn-primary': this.enabledCategories.indexOf(categoryString) !== -1, 'btn-outline-primary': this.enabledCategories.indexOf(categoryString) === -1 }" (click)="categoryButtonClicked(categoryString)">{{categoryString}}</button>&nbsp;
 </ng-container>
