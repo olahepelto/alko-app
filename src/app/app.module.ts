@@ -6,12 +6,16 @@ import {AlkolistComponent} from './alkolist/alkolist.component';
 import {HttpClientModule} from '@angular/common/http';
 import {AlkoSelectionDialogComponent} from './alko-selection-dialog/alko-selection-dialog.component';
 import {Ng2CacheModule} from 'ng2-cache';
+import {AlkolistMobileComponent} from './alkolist-mobile/alkolist-mobile.component';
+import {AlkolistDesktopComponent} from './alkolist-desktop/alkolist-desktop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlkolistComponent,
-    AlkoSelectionDialogComponent
+    AlkoSelectionDialogComponent,
+    AlkolistMobileComponent,
+    AlkolistDesktopComponent
   ],
   imports: [
     BrowserModule,

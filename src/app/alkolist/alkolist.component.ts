@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, HostListener, OnInit, ViewChild} from '@angular/core';
 import {AlkoService} from '../alko.service';
 
 
@@ -9,14 +9,9 @@ import {AlkoService} from '../alko.service';
 })
 export class AlkolistComponent implements OnInit {
 
-  @ViewChild('myModal') myModal;
-
-  public activeProducts = [];
-
-  public activePage = 0;
-
+  public screenWidth;
   public categories = [
-    {name: 'Viinit', cat: ['punaviinit', 'roseeviinit', 'valkoviinit', 'Jälkiruokaviinit, väkevöidyt ja muut viinit']},
+    {name: 'Viinit', cat: ['punaviinit', 'roseeviinit', 'valkoviinit', 'Jälkiruokaviinit ja Muut viinit']},
     {name: 'Kuohuviinit', cat: ['kuohuviinit & samppanjat']},
     {name: 'Rommit', cat: ['rommit']},
     {name: 'konjakit', cat: ['konjakit']},
@@ -31,8 +26,18 @@ export class AlkolistComponent implements OnInit {
     {name: 'Puistokemisteille', cat: ['lasinpesuneste']},
   ];
 
+  @ViewChild('myModal') myModal;
 
-  constructor(public alkoService : AlkoService) { }
+  public activePage = 0;
+
+  constructor(public alkoService: AlkoService) {
+    this.onResize();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event?) {
+    this.screenWidth = window.innerWidth;
+  }
 
   ngOnInit() {
 
@@ -46,19 +51,24 @@ export class AlkolistComponent implements OnInit {
     this.myModal.nativeElement.className = 'modal hide';
   }
 
+  public getNearestPages() {
+    let newPageList;
+    if (this.activePage == 0 || this.activePage == 1) {
+      newPageList = [0, 1, 2, 3, 4];
+    }
+    if (this.activePage >= 2 && this.activePage <= this.alkoService.pagesList.length - 3) {
+      newPageList = [this.activePage - 2, this.activePage - 1, this.activePage, this.activePage + 1, this.activePage + 2];
+    }
+    if (this.activePage == this.alkoService.pagesList.length - 2 || this.activePage == this.alkoService.pagesList.length - 1) {
+      newPageList = [this.alkoService.pagesList.length - 5, this.alkoService.pagesList.length - 4, this.alkoService.pagesList.length - 3, this.alkoService.pagesList.length - 2, this.alkoService.pagesList.length - 1];
+    }
+    return newPageList;
+  }
+
   public selectPage(page: any, doIt: boolean) {
     if (doIt) {
       this.activePage = page;
     }
-  }
-
-  public listContainsStore(store, list) {
-    for (let availObj of list) {
-      if (availObj.storeName == store) {
-        return true;
-      }
-    }
-    return false;
   }
 
   public categoryButtonClicked(categories: any) {
@@ -81,7 +91,7 @@ export class AlkolistComponent implements OnInit {
       "siiderit",
       "juomasekoitukset",
       "kuohuviinit & samppanjat",
-      "Jälkiruokaviinit, väkevöidyt ja muut viinit",
+      'Jälkiruokaviinit ja Muut viinit',
       "Brandyt, Armanjakit ja Calvadosit",
       "Ginit ja maustetut viinat",
       "Liköörit ja Katkerot",

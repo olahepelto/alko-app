@@ -41,19 +41,25 @@
 
 <nav class="d-flex justify-content-center" aria-label="...">
   <ul class="pagination">
-    <li class="page-item disabled" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage - 1) === -1}"
+    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage - 1) === -1}"
+        (click)="selectPage(0, alkoService.pagesList.indexOf(activePage - 1) !== -1)">
+      <a class="page-link" href="#" tabindex="-1"><<</a>
+    </li>
+    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage - 1) === -1}"
         (click)="selectPage(activePage - 1, alkoService.pagesList.indexOf(activePage - 1) !== -1)">
       <a class="page-link" href="#" tabindex="-1">Previous</a>
     </li>
-
-    <li *ngFor="let page of alkoService.pagesList" class="page-item" [ngClass]="{'active': activePage === page}"
+    <li *ngFor="let page of getNearestPages()" class="page-item" [ngClass]="{'active': activePage === page}"
         (click)="selectPage(page, true)">
       <a class="page-link" href="#">{{page + 1}} </a>
     </li>
-
     <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage + 1) === -1}"
         (click)="selectPage(activePage + 1, alkoService.pagesList.indexOf(activePage + 1) !== -1)">
       <a class="page-link" href="#">Next</a>
+    </li>
+    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage + 1) === -1}"
+        (click)="selectPage(alkoService.pagesList.length - 1, alkoService.pagesList.indexOf(activePage + 1) !== -1)">
+      <a class="page-link" href="#">>></a>
     </li>
 
   </ul>
@@ -62,35 +68,5 @@
 
 <br>
 
-<div class="container rounded" style="min-width: 80%;">
-  <div class="row">
-    <div class="col">Saatavuus</div>
-    <div class="col">Nimi</div>
-    <div class="col">Tyyppi</div>
-    <div class="col-sm-1">Pullokoko</div>
-    <div class="col-sm-1">%-Alkoholia</div>
-    <div class="col-md-1">Pakkaustyyppi</div>
-    <div class="col-sm-1">Hinta</div>
-    <div class="col-sm-1">Euro/L</div>
-    <div class="col-sm-1">1L Etanolia</div>
-  </div>
-  <div class="row" style="background-color: #a0beac3d; margin-bottom: 2px;"
-       *ngFor="let alcoholProduct of alkoService.activeProducts | slice:activePage * alkoService.ITEMS_PER_PAGE : (activePage + 1) * alkoService.ITEMS_PER_PAGE">
-    <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1">
-      <div class="col" style="text-align: left;">
-        <span style="color: green;"
-              *ngIf="listContainsStore(alkoService.selectedAlko, alkoService.availabilityDataObj[alcoholProduct.Numero])">Saatavilla</span>
-        <span style="color: red;"
-              *ngIf="!listContainsStore(alkoService.selectedAlko, alkoService.availabilityDataObj[alcoholProduct.Numero])">Ei Saatavilla</span>
-      </div>
-      <div class="col" style="text-align: left;">{{alcoholProduct.Nimi}}</div>
-      <div class="col" style="text-align: left;">{{alcoholProduct.Tyyppi}}</div>
-      <div class="col-sm-1" style="text-align: left; width: 50px;">{{alcoholProduct.Pullokoko}}L</div>
-      <div class="col-sm-1" style="text-align: left;">{{alcoholProduct.ProsAlkohol}}%</div>
-      <div class="col-md-1" style="text-align: left;">{{alcoholProduct.Pakkaustyyppi}}</div>
-      <div class="col-sm-1" style="text-align: left;">{{alcoholProduct.Hinta}}€</div>
-      <div class="col-sm-1" style="text-align: left;">{{alcoholProduct.Litrahinta}}€/L</div>
-      <div class="col-sm-1" style="text-align: left;">{{alcoholProduct.EurPerLAlkohol}}€</div>
-    </ng-container>
-  </div>
-</div>
+<app-alkolist-desktop *ngIf="screenWidth >= 1150" [activePage]="activePage"></app-alkolist-desktop>
+<app-alkolist-mobile *ngIf="screenWidth < 1150" [activePage]="activePage"></app-alkolist-mobile>

@@ -403,7 +403,7 @@ export class AlkoService {
     'siiderit',
     'juomasekoitukset',
     'kuohuviinit & samppanjat',
-    'Jälkiruokaviinit, väkevöidyt ja muut viinit',
+    'Jälkiruokaviinit ja Muut viinit',
     'Brandyt, Armanjakit ja Calvadosit',
     'Ginit ja maustetut viinat',
     'Liköörit ja Katkerot',
@@ -413,16 +413,21 @@ export class AlkoService {
 
   constructor(private http: HttpClient, private _cacheService: CacheService) {
     this.generateAlkoData();
-
-    if (this._cacheService.get('selectedAlko') !== undefined) {
-      this.selectedAlko = this._cacheService.get('selectedAlko');
+    if (document.cookie !== '') {
+      this.selectedAlko = this.getCookie('selectedAlko');
     }
   }
 
   setSelectedAlko(alko: any) {
-    console.log(alko);
     this.selectedAlko = alko;
-    this._cacheService.set('selectedAlko', alko);
+    document.cookie = 'selectedAlko=' + alko;
+  }
+
+  getCookie(cookiename: string) {
+    // Get name followed by anything except a semicolon
+    const cookiestring = RegExp('' + cookiename + '[^;]+').exec(document.cookie);
+    // Return everything after the equal sign, or an empty string if the cookie name not found
+    return decodeURIComponent(!!cookiestring ? cookiestring.toString().replace(/^[^=]+./, '') : '');
   }
 
   generateAlkoData(){
