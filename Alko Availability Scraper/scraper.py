@@ -416,6 +416,9 @@ def dataToFileWithProductId(id):
 	f.write("\n]")
 	f.close()
 
+if not os.path.exists("result"):
+    os.makedirs("result")
+	
 #Open ids list
 id_filename = "alko_product_ids.txt";
 #id_filename = "testing_ids.txt";
