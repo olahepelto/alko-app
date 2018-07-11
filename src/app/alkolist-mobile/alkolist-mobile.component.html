@@ -1,0 +1,32 @@
+<div class="container rounded" style="min-width: 95%;">
+  <div class="row" style="background-color: #a0beac3d; margin-bottom: 2px;"
+       *ngFor="let alcoholProduct of alkoService.activeProducts | slice:activePage * alkoService.ITEMS_PER_PAGE : (activePage + 1) * alkoService.ITEMS_PER_PAGE">
+    <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1">
+
+      <div class="col-4" style="text-align: left;">Saatavuus</div>
+
+      <div class="col-8" style="text-align: left;"><span style="color: green;"
+                                                         *ngIf="listContainsStore(alkoService.selectedAlko, alkoService.availabilityDataObj[alcoholProduct.Numero])">Saatavilla</span>
+        <span style="color: red;"
+              *ngIf="!listContainsStore(alkoService.selectedAlko, alkoService.availabilityDataObj[alcoholProduct.Numero])">Ei Saatavilla</span>
+      </div>
+
+      <div class="col-4" style="text-align: left;">Nimi</div>
+      <div class="col-8" style="text-align: left;">{{alcoholProduct.Nimi}}</div>
+      <div class="col-4" style="text-align: left;">Tyyppi</div>
+      <div class="col-8" style="text-align: left;">{{alcoholProduct.Tyyppi}}</div>
+      <div class="col-4" style="text-align: left;">Pullokoko</div>
+      <div class="col-8" style="text-align: left;">{{alcoholProduct.Pullokoko}}L</div>
+      <div class="col-4" style="text-align: left;">%-Alkoholia</div>
+      <div class="col-8" style="text-align: left;">{{alcoholProduct.ProsAlkohol}}%</div>
+      <div class="col-4" style="text-align: left;">Pakkaustyyppi</div>
+      <div class="col-8" style="text-align: left;">{{alcoholProduct.Pakkaustyyppi}}</div>
+      <div class="col-4" style="text-align: left;">Hinta</div>
+      <div class="col-8" style="text-align: left;">{{alcoholProduct.Hinta}}€</div>
+      <div class="col-4" style="text-align: left;">Litrahinta</div>
+      <div class="col-8" style="text-align: left;">{{alcoholProduct.Litrahinta}}€/L</div>
+      <div class="col-4" style="text-align: left;">1L - C<sub>2</sub>H<sub>6</sub>O</div>
+      <div class="col-8" style="text-align: left;">{{alcoholProduct.EurPerLAlkohol}}€/L</div>
+    </ng-container>
+  </div>
+</div>
