@@ -1,39 +1,39 @@
 <nav *ngIf="alkoService.pagesList.length > 5" class="d-flex justify-content-center" aria-label="...">
   <ul class="pagination">
-    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage - 1) === -1}"
-        (click)="selectPage(0, alkoService.pagesList.indexOf(activePage - 1) !== -1)">
+    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(alkoService.activePage - 1) === -1}"
+        (click)="selectPage(0, alkoService.pagesList.indexOf(alkoService.activePage - 1) !== -1)">
       <a class="page-link" href="#" tabindex="-1"><<</a>
     </li>
-    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage - 1) === -1}"
-        (click)="selectPage(activePage - 1, alkoService.pagesList.indexOf(activePage - 1) !== -1)">
+    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(alkoService.activePage - 1) === -1}"
+        (click)="selectPage(alkoService.activePage - 1, alkoService.pagesList.indexOf(alkoService.activePage - 1) !== -1)">
       <a class="page-link" href="#" tabindex="-1">Previous</a>
     </li>
-    <li *ngFor="let page of getNearestPages()" class="page-item" [ngClass]="{'active': activePage === page}"
+    <li *ngFor="let page of getNearestPages()" class="page-item" [ngClass]="{'active': alkoService.activePage === page}"
         (click)="selectPage(page, true)">
       <a class="page-link" href="#">{{page + 1}} </a>
     </li>
-    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage + 1) === -1}"
-        (click)="selectPage(activePage + 1, alkoService.pagesList.indexOf(activePage + 1) !== -1)">
+    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(alkoService.activePage + 1) === -1}"
+        (click)="selectPage(alkoService.activePage + 1, alkoService.pagesList.indexOf(alkoService.activePage + 1) !== -1)">
       <a class="page-link" href="#">Next</a>
     </li>
-    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage + 1) === -1}"
-        (click)="selectPage(alkoService.pagesList.length - 1, alkoService.pagesList.indexOf(activePage + 1) !== -1)">
+    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(alkoService.activePage + 1) === -1}"
+        (click)="selectPage(alkoService.pagesList.length - 1, alkoService.pagesList.indexOf(alkoService.activePage + 1) !== -1)">
       <a class="page-link" href="#">>></a>
     </li>
   </ul>
 </nav>
 <nav *ngIf="alkoService.pagesList.length <= 5" class="d-flex justify-content-center" aria-label="...">
   <ul class="pagination">
-    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage - 1) === -1}"
-        (click)="selectPage(activePage - 1, alkoService.pagesList.indexOf(activePage - 1) !== -1)">
+    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(alkoService.activePage - 1) === -1}"
+        (click)="selectPage(alkoService.activePage - 1, alkoService.pagesList.indexOf(alkoService.activePage - 1) !== -1)">
       <a class="page-link" href="#" tabindex="-1">Previous</a>
     </li>
-    <li *ngFor="let page of alkoService.pagesList" class="page-item" [ngClass]="{'active': activePage === page}"
+    <li *ngFor="let page of alkoService.pagesList" class="page-item" [ngClass]="{'active': alkoService.activePage === page}"
         (click)="selectPage(page, true)">
       <a class="page-link" href="#">{{page + 1}} </a>
     </li>
-    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage + 1) === -1}"
-        (click)="selectPage(activePage + 1, alkoService.pagesList.indexOf(activePage + 1) !== -1)">
+    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(alkoService.activePage + 1) === -1}"
+        (click)="selectPage(alkoService.activePage + 1, alkoService.pagesList.indexOf(alkoService.activePage + 1) !== -1)">
       <a class="page-link" href="#">Next</a>
     </li>
   </ul>

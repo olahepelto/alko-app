@@ -8,8 +8,6 @@ import {AlkoService} from '../alko.service';
 })
 export class AlkolistMobileComponent implements OnInit {
 
-  @Input() activePage: string;
-
   constructor(public alkoService: AlkoService) {
   }
 

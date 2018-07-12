@@ -9,8 +9,6 @@ import {AlkoService} from '../alko.service';
 })
 export class AlkolistDesktopComponent implements OnInit {
 
-  @Input() activePage: string;
-
   constructor(public alkoService: AlkoService) {
   }
 

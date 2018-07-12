@@ -28,8 +28,6 @@ export class AlkolistComponent implements OnInit {
 
   @ViewChild('myModal') myModal;
 
-  public activePage = 0;
-
   constructor(public alkoService: AlkoService) {
     this.onResize();
   }
@@ -49,26 +47,6 @@ export class AlkolistComponent implements OnInit {
 
   public closeAlkoSelectDialog() {
     this.myModal.nativeElement.className = 'modal hide';
-  }
-
-  public getNearestPages() {
-    let newPageList;
-    if (this.activePage == 0 || this.activePage == 1) {
-      newPageList = [0, 1, 2, 3, 4];
-    }
-    if (this.activePage >= 2 && this.activePage <= this.alkoService.pagesList.length - 3) {
-      newPageList = [this.activePage - 2, this.activePage - 1, this.activePage, this.activePage + 1, this.activePage + 2];
-    }
-    if (this.activePage == this.alkoService.pagesList.length - 2 || this.activePage == this.alkoService.pagesList.length - 1) {
-      newPageList = [this.alkoService.pagesList.length - 5, this.alkoService.pagesList.length - 4, this.alkoService.pagesList.length - 3, this.alkoService.pagesList.length - 2, this.alkoService.pagesList.length - 1];
-    }
-    return newPageList;
-  }
-
-  public selectPage(page: any, doIt: boolean) {
-    if (doIt) {
-      this.activePage = page;
-    }
   }
 
   public categoryButtonClicked(categories: any) {

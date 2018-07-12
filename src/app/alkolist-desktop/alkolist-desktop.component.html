@@ -11,7 +11,8 @@
     <div class="col-1">1L - C<sub>2</sub>H<sub>6</sub>O</div>
   </div>
   <div class="row" style="background-color: #a0beac3d; margin-bottom: 2px;"
-       *ngFor="let alcoholProduct of alkoService.activeProducts | slice:activePage * alkoService.ITEMS_PER_PAGE : (activePage + 1) * alkoService.ITEMS_PER_PAGE">
+       *ngFor="let alcoholProduct of alkoService.getProductsOnPage(alkoService.activePage)">
+
     <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1">
       <div class="col-xs-12 col-1" style="text-align: left;">
         <span style="color: green;"

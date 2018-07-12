@@ -6,8 +6,7 @@
 <div class="alert alert-warning" *ngIf="alkoService.selectedAlko == undefined">
   <p><strong>Huom!</strong> Saatavuustietoja varten sinun pitää valita alkon toimipiste. <a href="#" class="alert-link"
                                                                                             data-toggle="modal"
-                                                                                            data-target="#myModal">Valitse
-    alko</a></p>
+                                                                                            data-target="#myModal">Valitse alko</a></p>
 </div>
 <hr>
 
@@ -29,8 +28,6 @@
   </div>
 </div>
 
-
-<!--<button style="margin-top: 12px;" type="button" class="btn btn-primary" (click)="resetCategories()">Kaikki Kategoriat</button>&nbsp;<br>-->
 <ng-container *ngFor="let category of categories">
   <button style="margin-top: 12px;" type="button" class="btn btn-primary"
           [ngClass]="{ 'btn-primary': this.alkoService.enabledCategories.indexOf(category.cat[0]) !== -1, 'btn-outline-primary': this.alkoService.enabledCategories.indexOf(category.cat[0]) === -1 }"
@@ -39,34 +36,12 @@
 </ng-container>
 <hr>
 
-<nav class="d-flex justify-content-center" aria-label="...">
-  <ul class="pagination">
-    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage - 1) === -1}"
-        (click)="selectPage(0, alkoService.pagesList.indexOf(activePage - 1) !== -1)">
-      <a class="page-link" href="#" tabindex="-1"><<</a>
-    </li>
-    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage - 1) === -1}"
-        (click)="selectPage(activePage - 1, alkoService.pagesList.indexOf(activePage - 1) !== -1)">
-      <a class="page-link" href="#" tabindex="-1">Previous</a>
-    </li>
-    <li *ngFor="let page of getNearestPages()" class="page-item" [ngClass]="{'active': activePage === page}"
-        (click)="selectPage(page, true)">
-      <a class="page-link" href="#">{{page + 1}} </a>
-    </li>
-    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage + 1) === -1}"
-        (click)="selectPage(activePage + 1, alkoService.pagesList.indexOf(activePage + 1) !== -1)">
-      <a class="page-link" href="#">Next</a>
-    </li>
-    <li class="page-item" [ngClass]="{'disabled': alkoService.pagesList.indexOf(activePage + 1) === -1}"
-        (click)="selectPage(alkoService.pagesList.length - 1, alkoService.pagesList.indexOf(activePage + 1) !== -1)">
-      <a class="page-link" href="#">>></a>
-    </li>
 
-  </ul>
-</nav>
+
+<app-pagination></app-pagination>
 
 
 <br>
 
-<app-alkolist-desktop *ngIf="screenWidth >= 1150" [activePage]="activePage"></app-alkolist-desktop>
-<app-alkolist-mobile *ngIf="screenWidth < 1150" [activePage]="activePage"></app-alkolist-mobile>
+<app-alkolist-desktop *ngIf="screenWidth >= 1150"></app-alkolist-desktop>
+<app-alkolist-mobile *ngIf="screenWidth < 1150"></app-alkolist-mobile>

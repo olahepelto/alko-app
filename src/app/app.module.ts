@@ -8,6 +8,7 @@ import {AlkoSelectionDialogComponent} from './alko-selection-dialog/alko-selecti
 import {Ng2CacheModule} from 'ng2-cache';
 import {AlkolistMobileComponent} from './alkolist-mobile/alkolist-mobile.component';
 import {AlkolistDesktopComponent} from './alkolist-desktop/alkolist-desktop.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {AlkolistDesktopComponent} from './alkolist-desktop/alkolist-desktop.comp
     AlkolistComponent,
     AlkoSelectionDialogComponent,
     AlkolistMobileComponent,
-    AlkolistDesktopComponent
+    AlkolistDesktopComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,

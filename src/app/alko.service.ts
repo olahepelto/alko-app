@@ -365,6 +365,8 @@ export class AlkoService {
     'Alko Liperi',
     'Alko Helsinki Mannerheimintie'];
 
+  public activePage = 0;
+
   public selectedAlko;
 
   public ITEMS_PER_PAGE = 200;
@@ -416,6 +418,10 @@ export class AlkoService {
     if (document.cookie !== '') {
       this.selectedAlko = this.getCookie('selectedAlko');
     }
+  }
+
+  public getProductsOnPage(activePage: any){
+    return this.activeProducts.slice(activePage * this.ITEMS_PER_PAGE, (activePage + 1) * this.ITEMS_PER_PAGE);
   }
 
   setSelectedAlko(alko: any) {

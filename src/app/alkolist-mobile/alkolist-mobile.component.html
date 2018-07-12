@@ -1,6 +1,6 @@
 <div class="container rounded" style="min-width: 95%;">
   <div class="row" style="background-color: #a0beac3d; margin-bottom: 2px;"
-       *ngFor="let alcoholProduct of alkoService.activeProducts | slice:activePage * alkoService.ITEMS_PER_PAGE : (activePage + 1) * alkoService.ITEMS_PER_PAGE">
+       *ngFor="let alcoholProduct of alkoService.getProductsOnPage(alkoService.activePage)">
     <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1">
 
       <div class="col-4" style="text-align: left;">Saatavuus</div>
