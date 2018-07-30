@@ -9,6 +9,7 @@ import {Ng2CacheModule} from 'ng2-cache';
 import {AlkolistMobileComponent} from './alkolist-mobile/alkolist-mobile.component';
 import {AlkolistDesktopComponent} from './alkolist-desktop/alkolist-desktop.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import {PapaParseModule} from 'ngx-papaparse';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PaginationComponent } from './pagination/pagination.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    Ng2CacheModule
+    Ng2CacheModule,
+    PapaParseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -16,12 +16,15 @@
     <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1">
       <div class="col-xs-12 col-1" style="text-align: left;">
         <span style="color: green;"
-              *ngIf="listContainsStore(alkoService.selectedAlko, alkoService.availabilityDataObj[alcoholProduct.Numero])">Saatavilla</span>
+              *ngIf="alkoService.availabilityObj[alcoholProduct.Numero]">Saatavilla</span>
         <span style="color: red;"
-              *ngIf="!listContainsStore(alkoService.selectedAlko, alkoService.availabilityDataObj[alcoholProduct.Numero])">Ei Saatavilla</span>
+              *ngIf="!alkoService.availabilityObj[alcoholProduct.Numero]">Ei Saatavilla</span>
       </div>
       <div class="col-3" style="text-align: left;">{{alcoholProduct.Nimi}}</div>
-      <div class="col-2">{{alcoholProduct.Tyyppi}}</div>
+      
+      <div class="col-2" *ngIf="alcoholProduct.Tyyppi !== 'Jälkiruokaviinit, väkevöidyt ja muut viinit'">{{alcoholProduct.Tyyppi}}</div>
+      <div class="col-2" *ngIf="alcoholProduct.Tyyppi === 'Jälkiruokaviinit, väkevöidyt ja muut viinit'">Jälkiruokaviinit ja muut</div>
+
       <div class="col-1">{{alcoholProduct.Pullokoko}}L</div>
       <div class="col-1">{{alcoholProduct.ProsAlkohol}}%</div>
       <div class="col-1">{{alcoholProduct.Pakkaustyyppi}}</div>

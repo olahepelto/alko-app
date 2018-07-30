@@ -22,8 +22,11 @@
     "@angular/router": "^6.0.3",
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.4",
+    "csvtojson": "^2.0.6",
     "ng2-cache": "^0.2.1",
+    "ngx-papaparse": "^2.1.4",
     "rxjs": "^6.0.0",
+    "stream": "0.0.2",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

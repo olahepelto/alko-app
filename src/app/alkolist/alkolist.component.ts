@@ -11,7 +11,7 @@ export class AlkolistComponent implements OnInit {
 
   public screenWidth;
   public categories = [
-    {name: 'Viinit', cat: ['punaviinit', 'roseeviinit', 'valkoviinit', 'Jälkiruokaviinit ja Muut viinit']},
+    {name: 'Viinit', cat: ['punaviinit', 'roseeviinit', 'valkoviinit', 'Jälkiruokaviinit, väkevöidyt ja muut viinit']},
     {name: 'Kuohuviinit', cat: ['kuohuviinit & samppanjat']},
     {name: 'Rommit', cat: ['rommit']},
     {name: 'konjakit', cat: ['konjakit']},
@@ -57,23 +57,23 @@ export class AlkolistComponent implements OnInit {
     this.alkoService.generatePageData();
   }
 
-  public resetCategories(){
+  public resetCategories() {
     this.alkoService.enabledCategories = [
-      "punaviinit",
-      "roseeviinit",
-      "valkoviinit",
-      "rommit",
-      "konjakit",
-      "viskit",
-      "oluet",
-      "siiderit",
-      "juomasekoitukset",
-      "kuohuviinit & samppanjat",
-      'Jälkiruokaviinit ja Muut viinit',
-      "Brandyt, Armanjakit ja Calvadosit",
-      "Ginit ja maustetut viinat",
-      "Liköörit ja Katkerot",
-      "vodkat ja viinat"
+      'punaviinit',
+      'roseeviinit',
+      'valkoviinit',
+      'rommit',
+      'konjakit',
+      'viskit',
+      'oluet',
+      'siiderit',
+      'juomasekoitukset',
+      'kuohuviinit & samppanjat',
+      'Jälkiruokaviinit, väkevöidyt ja muut viinit',
+      'Brandyt, Armanjakit ja Calvadosit',
+      'Ginit ja maustetut viinat',
+      'Liköörit ja Katkerot',
+      'vodkat ja viinat'
     ];
   }
 
