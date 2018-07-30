@@ -1,18 +1,21 @@
 <div class="container rounded" style="min-width: 95%;">
   <div class="row" style="background-color: #a0beac3d; margin-bottom: 2px;"
        *ngFor="let alcoholProduct of alkoService.getProductsOnPage(alkoService.activePage)">
-    <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1">
+    <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1 && alcoholProduct.EurPerLAlkohol > 30">
 
       <div class="col-4" style="text-align: left;">Saatavuus</div>
 
-      <div class="col-8" style="text-align: left;"><span style="color: green;"
-                                                         *ngIf="listContainsStore(alkoService.selectedAlko, alkoService.availabilityDataObj[alcoholProduct.Numero])">Saatavilla</span>
-        <span style="color: red;"
-              *ngIf="!listContainsStore(alkoService.selectedAlko, alkoService.availabilityDataObj[alcoholProduct.Numero])">Ei Saatavilla</span>
+      <div class="col-8" style="text-align: left;">
+          <span style="color: green;" *ngIf="alkoService.availabilityObj[alcoholProduct.Numero]">Saatavilla</span>
+          <span style="color: red;" *ngIf="!alkoService.availabilityObj[alcoholProduct.Numero]">Ei Saatavilla</span>
       </div>
 
       <div class="col-4" style="text-align: left;">Nimi</div>
-      <div class="col-8" style="text-align: left;">{{alcoholProduct.Nimi}}</div>
+      <div class="col-8" style="text-align: left;">
+        <a style="color: black; text-decoration:none;" href="{{'https://www.alko.fi/tuotteet/' + alcoholProduct.Numero}}">
+          {{alcoholProduct.Nimi}}
+        </a>
+      </div>
       <div class="col-4" style="text-align: left;">Tyyppi</div>
       <div class="col-8" style="text-align: left;">{{alcoholProduct.Tyyppi}}</div>
       <div class="col-4" style="text-align: left;">Pullokoko</div>
