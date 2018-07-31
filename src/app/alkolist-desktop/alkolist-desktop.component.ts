@@ -1,5 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ElementRef, ViewChild} from '@angular/core';
 import {AlkoService} from '../alko.service';
+
 
 
 @Component({
@@ -9,15 +10,21 @@ import {AlkoService} from '../alko.service';
 })
 export class AlkolistDesktopComponent implements OnInit {
 
+  public productHover = [];
+
   constructor(public alkoService: AlkoService) {
   }
 
   ngOnInit() {
   }
 
+  public test() {
+    console.log('Test');
+  }
+
   public listContainsStore(store, list) {
-    for (let availObj of list) {
-      if (availObj.storeName == store) {
+    for (const availObj of list) {
+      if (availObj.storeName === store) {
         return true;
       }
     }

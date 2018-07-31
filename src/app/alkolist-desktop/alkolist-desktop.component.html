@@ -11,7 +11,7 @@
     <div class="col-1">1L - C<sub>2</sub>H<sub>6</sub>O</div>
   </div>
   <div class="row" style="background-color: #a0beac3d; margin-bottom: 2px;"
-       *ngFor="let alcoholProduct of alkoService.getProductsOnPage(alkoService.activePage)">
+       *ngFor="let alcoholProduct of alkoService.getProductsOnPage(alkoService.activePage); let i = index">
 
     <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1 && alcoholProduct.EurPerLAlkohol > 30"><!--EurPerLAlkohol > 30 | Removes the broken products-->
       <div class="col-xs-12 col-1" style="text-align: left;">
@@ -19,8 +19,8 @@
         <span style="color: red;" *ngIf="!alkoService.availabilityObj[alcoholProduct.Numero]">Ei Saatavilla</span>
       </div>
       <div class="col-3" style="text-align: left;">
-        <!--<img src="{{'https://images.alko.fi/images/cs_srgb,f_auto,t_products/cdn/' + alcoholProduct.Numero + '/a.jpg'}}">-->
-        <a style="color: black; text-decoration:none;" href="{{'https://www.alko.fi/tuotteet/' + alcoholProduct.Numero}}">
+        <img [ngClass]="{'image-big' : productHover[i], 'image-hidden' : !productHover[i]}" src="{{'https://images.alko.fi/images/cs_srgb,f_auto,t_products/cdn/' + alcoholProduct.Numero + '/a.jpg'}}">
+        <a style="color: #212529; text-decoration:none;" (mouseenter)="productHover[i] = true" (mouseleave)="productHover[i] = false" href="{{'https://www.alko.fi/tuotteet/' + alcoholProduct.Numero}}">
           {{alcoholProduct.Nimi}}
         </a>
       </div>
