@@ -24,6 +24,8 @@ export class AlkoService {
   public availabilityObject; // This is the whole availability object
   public availabilityObj = {}; // This is the current availability
 
+  public currentSortType = 'EurPerLAlkohol';
+
   public enabledCategories = [
     'punaviinit',
     'roseeviinit',
@@ -88,18 +90,20 @@ export class AlkoService {
       this.csvParser.parse(error.error.text, {
         complete: (results, file) => {
           results.data.forEach((line) => {
-            this.alkoObj.push({
-              'Numero': line[0],
-              'Nimi': line[1],
-              'Pullokoko': parseFloat(line[2]),
-              'Hinta': parseFloat(line[3]),
-              'Litrahinta': parseFloat(line[4]),
-              'Tyyppi': line[5],
-              'Luonnehdinta': line[6],
-              'Pakkaustyyppi': line[7],
-              'ProsAlkohol': line[8],
-              'EurPerLAlkohol': parseFloat(line[9])
-            });
+            if (parseFloat(line[9]) > 30) {
+              this.alkoObj.push({
+                'Numero': line[0],
+                'Nimi': line[1],
+                'Pullokoko': parseFloat(line[2]),
+                'Hinta': parseFloat(line[3]),
+                'Litrahinta': parseFloat(line[4]),
+                'Tyyppi': line[5],
+                'Luonnehdinta': line[6],
+                'Pakkaustyyppi': line[7],
+                'ProsAlkohol': parseFloat(line[8]),
+                'EurPerLAlkohol': parseFloat(line[9])
+              });
+            }
           });
           this.alkoObj.shift(); // Remove first row of csv
           this.alkoObj = this.insertionSort(this.alkoObj, 'EurPerLAlkohol');
@@ -112,6 +116,7 @@ export class AlkoService {
   }
 
   public changeSort(sortType: string) {
+    this.currentSortType = sortType;
     this.alkoObj = this.insertionSort(this.alkoObj, sortType);
     this.generatePageData();
   }

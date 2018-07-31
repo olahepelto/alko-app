@@ -3,17 +3,17 @@
     <div class="col-1">Saatavuus</div>
     <div class="col-3">Nimi</div>
     <div class="col-2">Tyyppi</div>
-    <div class="col-1">Pullokoko</div>
-    <div class="col-1">%-Alkoholia</div>
+    <div class="col-1" style="cursor: pointer;" (click)="alkoService.changeSort('Pullokoko')">Pullokoko<fa *ngIf="alkoService.currentSortType == 'Pullokoko'" name="filter"></fa></div>
+    <div class="col-1" style="cursor: pointer;" (click)="alkoService.changeSort('ProsAlkohol')">Alkoholia<fa *ngIf="alkoService.currentSortType == 'ProsAlkohol'" name="filter"></fa></div>
     <div class="col-1">Pakkaustyyppi</div>
-    <div class="col-1">Hinta</div>
-    <div class="col-1" (click)="alkoService.changeSort('Litrahinta')>Litrahinta</div>
-    <div class="col-1">1L - C<sub>2</sub>H<sub>6</sub>O</div>
+    <div class="col-1" style="cursor: pointer;" (click)="alkoService.changeSort('Hinta')">Hinta<fa *ngIf="alkoService.currentSortType == 'Hinta'" name="filter"></fa></div>
+    <div class="col-1" style="cursor: pointer;" (click)="alkoService.changeSort('Litrahinta')">Litrahinta<fa *ngIf="alkoService.currentSortType == 'Litrahinta'" name="filter"></fa></div>
+    <div class="col-1" style="cursor: pointer;" (click)="alkoService.changeSort('EurPerLAlkohol')">1L - C<sub>2</sub>H<sub>6</sub>O<fa *ngIf="alkoService.currentSortType == 'EurPerLAlkohol'" name="filter"></fa></div>
   </div>
   <div class="row" style="background-color: #a0beac3d; margin-bottom: 2px;"
        *ngFor="let alcoholProduct of alkoService.getProductsOnPage(alkoService.activePage); let i = index">
 
-    <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1 && alcoholProduct.EurPerLAlkohol > 30"><!--EurPerLAlkohol > 30 | Removes the broken products-->
+    <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1"><!--EurPerLAlkohol > 30 | Removes the broken products-->
       <div class="col-xs-12 col-1" style="text-align: left;">
         <span style="color: green;" *ngIf="alkoService.availabilityObj[alcoholProduct.Numero]">Saatavilla</span>
         <span style="color: red;" *ngIf="!alkoService.availabilityObj[alcoholProduct.Numero]">Ei Saatavilla</span>

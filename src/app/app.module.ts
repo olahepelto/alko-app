@@ -10,6 +10,7 @@ import {AlkolistMobileComponent} from './alkolist-mobile/alkolist-mobile.compone
 import {AlkolistDesktopComponent} from './alkolist-desktop/alkolist-desktop.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import {PapaParseModule} from 'ngx-papaparse';
+import {AngularFontAwesomeModule} from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {PapaParseModule} from 'ngx-papaparse';
     BrowserModule,
     HttpClientModule,
     Ng2CacheModule,
-    PapaParseModule
+    PapaParseModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
