@@ -68,6 +68,8 @@ export class AlkoService {
   }
 
   generateAlkoData() {
+    console.log(this);
+
     this.http.get('./assets/availability.csv').subscribe(data => {
     }, error => {
       this.csvParser.parse(error.error.text, {
@@ -89,9 +91,9 @@ export class AlkoService {
             this.alkoObj.push({
               'Numero': line[0],
               'Nimi': line[1],
-              'Pullokoko': line[2],
-              'Hinta': line[3],
-              'Litrahinta': line[4],
+              'Pullokoko': parseFloat(line[2]),
+              'Hinta': parseFloat(line[3]),
+              'Litrahinta': parseFloat(line[4]),
               'Tyyppi': line[5],
               'Luonnehdinta': line[6],
               'Pakkaustyyppi': line[7],
@@ -100,13 +102,18 @@ export class AlkoService {
             });
           });
           this.alkoObj.shift(); // Remove first row of csv
-          this.alkoObj = this.insertionSort(this.alkoObj);
+          this.alkoObj = this.insertionSort(this.alkoObj, 'EurPerLAlkohol');
 
           console.log(this.alkoObj);
           this.generatePageData();
         }
       });
     });
+  }
+
+  public changeSort(sortType: string) {
+    this.alkoObj = this.insertionSort(this.alkoObj, sortType);
+    this.generatePageData();
   }
 
   refreshAvailability() {
@@ -117,11 +124,11 @@ export class AlkoService {
     });
   }
 
-  public insertionSort(array: any) {
+  public insertionSort(array: any, sortingCriterion: string) {
     for (let i = 0; i < array.length; i++) {
       const temp = array[i];
       let j = i - 1;
-      while (j >= 0 && array[j].EurPerLAlkohol > temp.EurPerLAlkohol) {
+      while (j >= 0 && array[j][sortingCriterion] > temp[sortingCriterion]) {
         array[j + 1] = array[j];
         j--;
       }
