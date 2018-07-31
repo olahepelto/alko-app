@@ -25,6 +25,7 @@ export class AlkoService {
   public availabilityObj = {}; // This is the current availability
 
   public currentSortType = 'EurPerLAlkohol';
+  public sortSmallestToBiggest = true;
 
   public enabledCategories = [
     'punaviinit',
@@ -116,6 +117,13 @@ export class AlkoService {
   }
 
   public changeSort(sortType: string) {
+    if (this.currentSortType === sortType) {
+      this.sortSmallestToBiggest = !this.sortSmallestToBiggest;
+      this.alkoObj = this.alkoObj.reverse();
+      this.generatePageData();
+      return;
+    }
+
     this.currentSortType = sortType;
     this.alkoObj = this.insertionSort(this.alkoObj, sortType);
     this.generatePageData();
