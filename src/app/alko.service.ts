@@ -3,6 +3,8 @@ import {HttpClient} from '@angular/common/http';
 import {CacheService} from 'ng2-cache';
 import { PapaParseService } from 'ngx-papaparse';
 
+let alkoService = null;
+
 @Injectable({
   providedIn: 'root'
 })
@@ -27,6 +29,8 @@ export class AlkoService {
   public currentSortType = 'EurPerLAlkohol';
   public sortSmallestToBiggest = true;
 
+  public lastFileUpdate = 'ei koskaan';
+
   public enabledCategories = [
     'punaviinit',
     'roseeviinit',
@@ -45,8 +49,8 @@ export class AlkoService {
     'vodkat ja viinat'
   ];
 
-
   constructor(private http: HttpClient, private _cacheService: CacheService, public csvParser: PapaParseService) {
+    alkoService = this;
     this.generateAlkoData();
     if (document.cookie !== '') {
       this.selectedAlko = this.getCookie('selectedAlko');
@@ -71,28 +75,32 @@ export class AlkoService {
   }
 
   generateAlkoData() {
-    console.log(this);
-
-    this.http.get('./assets/availability.csv').subscribe(data => {
-    }, error => {
-      this.csvParser.parse(error.error.text, {
+    fetch('./assets/availability.csv')
+    .then(function(response) {
+      return response.text();
+    }).then(function(body) {
+      alkoService.csvParser.parse(body, {
         complete: (results, file) => {
-          this.alko_stores = results.data[0];
-          this.alko_stores.splice(0, 1); // Remove 'product_number'
+          alkoService.alko_stores = results.data[0];
+          alkoService.lastFileUpdate = alkoService.alko_stores[0];
+          alkoService.alko_stores.splice(0, 1); // Remove 'product_number'
 
-          this.availabilityObject = results.data;
-          this.refreshAvailability();
+          alkoService.availabilityObject = results.data;
+          alkoService.refreshAvailability();
         }
       });
     });
 
-    this.http.get('./assets/alko_products.csv').subscribe(data => {
-    }, error => {
-      this.csvParser.parse(error.error.text, {
+
+    fetch('./assets/alko_products.csv')
+    .then(function(response) {
+      return response.text();
+    }).then(function(body) {
+      alkoService.csvParser.parse(body, {
         complete: (results, file) => {
           results.data.forEach((line) => {
             if (parseFloat(line[9]) > 30) {
-              this.alkoObj.push({
+              alkoService.alkoObj.push({
                 'Numero': line[0],
                 'Nimi': line[1],
                 'Pullokoko': parseFloat(line[2]),
@@ -106,11 +114,9 @@ export class AlkoService {
               });
             }
           });
-          this.alkoObj.shift(); // Remove first row of csv
-          this.alkoObj = this.insertionSort(this.alkoObj, 'EurPerLAlkohol');
-
-          console.log(this.alkoObj);
-          this.generatePageData();
+          alkoService.alkoObj.shift(); // Remove first row of csv
+          alkoService.alkoObj = alkoService.insertionSort(alkoService.alkoObj, 'EurPerLAlkohol');
+          alkoService.generatePageData();
         }
       });
     });

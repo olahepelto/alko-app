@@ -1,7 +1,6 @@
 <div class="alert alert-success" role="alert">
-  <h5 class="alert-heading">Tuotteet päivitetty 7.7.2018.</h5>
-  <p>Jokainen alkon tuote järjestettynä halvimmasta kännistä kalleimpaan. Saatavuudet haetaan alkon sivuilta 12h välein.<br>
-  </p>
+  <h5 class="alert-heading">Raavittu {{alkoService.lastFileUpdate}}</h5>
+  <p>Jokainen alkon tuote järjestettynä halvimmasta kännistä kalleimpaan. Tuotteet ja saatavuusdata raaputetaan alkon sivuilta joka päivä.</p>
 </div>
 <div class="alert alert-warning" *ngIf="alkoService.selectedAlko == undefined">
   <p><strong>Huom!</strong> Saatavuustietoja varten sinun pitää valita alkon toimipiste. <a href="#" class="alert-link"
