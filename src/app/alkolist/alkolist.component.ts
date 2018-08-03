@@ -23,7 +23,7 @@ export class AlkolistComponent implements OnInit {
     {name: 'Ginit ja maustetut viinat', cat: ['Ginit ja maustetut viinat']},
     {name: 'Liköörit ja Katkerot', cat: ['Liköörit ja Katkerot']},
     {name: 'vodkat ja viinat', cat: ['vodkat ja viinat']},
-    {name: 'Puistokemisteille', cat: ['lasinpesuneste']},
+    {name: 'Lasinpesunesteet', cat: ['lasinpesuneste']},
   ];
 
   @ViewChild('myModal') myModal;

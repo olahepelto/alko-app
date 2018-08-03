@@ -1,6 +1,6 @@
 <div class="alert alert-success" role="alert">
   <h5 class="alert-heading">Raavittu {{alkoService.lastFileUpdate}}</h5>
-  <p>Jokainen alkon tuote järjestettynä halvimmasta kännistä kalleimpaan. Tuotteet ja saatavuusdata raaputetaan alkon sivuilta joka päivä.</p>
+  <p>Jokainen alkon tuote järjestettynä halvimmasta kännistä kalleimpaan. Tuotteet ja saatavuus raaputetaan alkon sivuilta päivittäin.</p>
 </div>
 <div class="alert alert-warning" *ngIf="alkoService.selectedAlko == undefined">
   <p><strong>Huom!</strong> Saatavuustietoja varten sinun pitää valita alkon toimipiste. <a href="#" class="alert-link"
@@ -42,5 +42,5 @@
 
 <br>
 
-<app-alkolist-desktop *ngIf="screenWidth >= 1150"></app-alkolist-desktop>
-<app-alkolist-mobile *ngIf="screenWidth < 1150"></app-alkolist-mobile>
+<app-alkolist-desktop *ngIf="screenWidth >= 1150 && !alkoService.mobileEnabled"></app-alkolist-desktop>
+<app-alkolist-mobile *ngIf="screenWidth < 1150 || alkoService.mobileEnabled"></app-alkolist-mobile>

@@ -15,8 +15,8 @@ export class AlkolistMobileComponent implements OnInit {
   }
 
   public listContainsStore(store, list) {
-    for (let availObj of list) {
-      if (availObj.storeName == store) {
+    for (const availObj of list) {
+      if (availObj.storeName === store) {
         return true;
       }
     }

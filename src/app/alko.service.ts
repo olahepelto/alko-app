@@ -10,6 +10,8 @@ let alkoService = null;
 })
 export class AlkoService {
 
+  public mobileEnabled;
+
   public alko_stores = [];
 
   public activePage = 0;
@@ -46,7 +48,8 @@ export class AlkoService {
     'Brandyt, Armanjakit ja Calvadosit',
     'Ginit ja maustetut viinat',
     'Liköörit ja Katkerot',
-    'vodkat ja viinat'
+    'vodkat ja viinat',
+    'lasinpesuneste'
   ];
 
   constructor(private http: HttpClient, private _cacheService: CacheService, public csvParser: PapaParseService) {
