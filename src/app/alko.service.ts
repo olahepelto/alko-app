@@ -10,6 +10,8 @@ let alkoService = null;
 })
 export class AlkoService {
 
+  public searchFieldContent = '';
+
   public mobileEnabled;
 
   public alko_stores = [];
@@ -54,6 +56,7 @@ export class AlkoService {
 
   constructor(private http: HttpClient, private _cacheService: CacheService, public csvParser: PapaParseService) {
     alkoService = this;
+    console.log(this);
     this.generateAlkoData();
     if (document.cookie !== '') {
       this.selectedAlko = this.getCookie('selectedAlko');

@@ -1,5 +1,5 @@
 <div class="alert alert-success" role="alert">
-  <h5 class="alert-heading">Raavittu {{alkoService.lastFileUpdate}}</h5>
+  <h5 class="alert-heading">Raaputettu {{alkoService.lastFileUpdate}}</h5>
   <p>Jokainen alkon tuote järjestettynä halvimmasta kännistä kalleimpaan. Tuotteet ja saatavuus raaputetaan alkon sivuilta päivittäin.</p>
 </div>
 <div class="alert alert-warning" *ngIf="alkoService.selectedAlko == undefined">
@@ -10,15 +10,28 @@
 <hr>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="opacity: 1;">
-  <div class="modal-dialog" role="document" style="transform: translate(0,25%);">
+<div style="height: 50px;" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="opacity: 1;">
+  <div class="modal-dialog" role="document" style="transform: translate(0,5%);">
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title" id="myModalLabel">Valitse Alko</h4>
       </div>
-      <div class="modal-body" style="overflow-y:scroll; height:500px;">
-        <a href="#" *ngFor="let alkoStore of alkoService.alko_stores" (click)="alkoService.setSelectedAlko(alkoStore)"
-           data-dismiss="modal">{{alkoStore}}<br></a>
+      <div class="container">
+          <div class="row">
+            <div class="container" style="max-width: 300px; margin-top: 10px;">
+              <input type="text" class="form-control" placeholder="Haku" (keyup)="searchChange($event)">
+            </div>
+          </div>
+        </div>
+      <div class="modal-body" style="overflow-y:scroll; height:300px;">
+        <ng-container *ngFor="let alkoStore of alkoService.alko_stores">
+            <a href="#" (click)="alkoService.setSelectedAlko(alkoStore)" data-dismiss="modal"
+            *ngIf="alkoStore.searchFieldContent == '' || alkoStore.toLowerCase().indexOf(alkoService.searchFieldContent.toLowerCase()) != -1">
+              {{alkoStore}}<br>
+            </a>
+        </ng-container>
+
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -42,5 +55,5 @@
 
 <br>
 
-<app-alkolist-desktop *ngIf="screenWidth >= 1150 && !alkoService.mobileEnabled"></app-alkolist-desktop>
-<app-alkolist-mobile *ngIf="screenWidth < 1150 || alkoService.mobileEnabled"></app-alkolist-mobile>
+<app-alkolist-desktop *ngIf="!alkoService.mobileEnabled"></app-alkolist-desktop>
+<app-alkolist-mobile *ngIf="alkoService.mobileEnabled"></app-alkolist-mobile>

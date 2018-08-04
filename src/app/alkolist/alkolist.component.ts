@@ -1,6 +1,6 @@
 import {Component, HostListener, OnInit, ViewChild} from '@angular/core';
 import {AlkoService} from '../alko.service';
-
+import { FormsModule } from '@angular/forms'; // supposed fix
 
 @Component({
   selector: 'app-alkolist',
@@ -34,11 +34,15 @@ export class AlkolistComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event?) {
-    this.screenWidth = window.innerWidth;
+    this.alkoService.mobileEnabled = window.innerWidth < 1150 ? true : false;
   }
 
   ngOnInit() {
 
+  }
+
+  public searchChange(event: any) {
+    this.alkoService.searchFieldContent = event.target.value;
   }
 
   public openAlkoSelectDialog() {
