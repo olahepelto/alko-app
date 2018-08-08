@@ -11,6 +11,7 @@ import {AlkolistDesktopComponent} from './alkolist-desktop/alkolist-desktop.comp
 import { PaginationComponent } from './pagination/pagination.component';
 import {PapaParseModule} from 'ngx-papaparse';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
+import { ProductSearchComponent } from './product-search/product-search.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome';
     AlkoSelectionDialogComponent,
     AlkolistMobileComponent,
     AlkolistDesktopComponent,
-    PaginationComponent
+    PaginationComponent,
+    ProductSearchComponent
   ],
   imports: [
     BrowserModule,

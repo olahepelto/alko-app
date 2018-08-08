@@ -42,7 +42,7 @@ export class AlkolistComponent implements OnInit {
   }
 
   public searchChange(event: any) {
-    this.alkoService.searchFieldContent = event.target.value;
+    this.alkoService.alkoSearchContent = event.target.value;
   }
 
   public openAlkoSelectDialog() {

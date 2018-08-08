@@ -26,7 +26,7 @@
       <div class="modal-body" style="overflow-y:scroll; height:300px;">
         <ng-container *ngFor="let alkoStore of alkoService.alko_stores">
             <a href="#" (click)="alkoService.setSelectedAlko(alkoStore)" data-dismiss="modal"
-            *ngIf="alkoStore.searchFieldContent == '' || alkoStore.toLowerCase().indexOf(alkoService.searchFieldContent.toLowerCase()) != -1">
+            *ngIf="alkoStore.alkoSearchContent == '' || alkoStore.toLowerCase().indexOf(alkoService.alkoSearchContent.toLowerCase()) != -1">
               {{alkoStore}}<br>
             </a>
         </ng-container>
@@ -49,11 +49,8 @@
 <hr>
 
 
-
+<app-product-search></app-product-search>
 <app-pagination></app-pagination>
-
-
-<br>
 
 <app-alkolist-desktop *ngIf="!alkoService.mobileEnabled"></app-alkolist-desktop>
 <app-alkolist-mobile *ngIf="alkoService.mobileEnabled"></app-alkolist-mobile>

@@ -10,7 +10,8 @@ let alkoService = null;
 })
 export class AlkoService {
 
-  public searchFieldContent = '';
+  public alkoSearchContent = '';
+  public productSearchContent = '';
 
   public mobileEnabled;
 
@@ -162,10 +163,24 @@ export class AlkoService {
     return array;
   }
 
-  public generatePageData() {
+  async generatePageData() {
     this.activeProducts = [];
+    let searchTermsList = this.productSearchContent.split(' ');
+    searchTermsList.forEach(string => {
+      if (string === '') {
+        searchTermsList = searchTermsList.splice(searchTermsList.indexOf(string), 1);
+      }
+    });
+
     this.alkoObj.forEach((product) => {
       if (this.enabledCategories.indexOf(product.Tyyppi) !== -1) {
+        if (searchTermsList.length !== 0) {
+          for (const a of searchTermsList) {
+            if (product.Nimi.toLowerCase().indexOf(a.toLowerCase()) === -1) {
+              return;
+            }
+          }
+        }
         this.activeProducts.push(product);
       }
     });
