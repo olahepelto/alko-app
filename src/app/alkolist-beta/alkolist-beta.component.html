@@ -1,0 +1,51 @@
+<div class="rounded" style="display: flex; flex-wrap: wrap;">
+  <div class="row" style="background-color: #a0beac3d; width: 400px; flex-grow: 1; margin: 0px; border-style: inset; border-width: 2px;"
+       *ngFor="let alcoholProduct of alkoService.getProductsOnPage(alkoService.activePage)">
+
+    <ng-container style="display: flex;" *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1 && alcoholProduct.EurPerLAlkohol > 30">
+      <h5 style="width: 100%; margin-top: 7px;">
+        <span style="color: gray;">{{alcoholProduct.Pullokoko}}L </span>
+        <a style="color: black; text-decoration:none;" href="{{'https://www.alko.fi/tuotteet/' + alcoholProduct.Numero}}">{{alcoholProduct.Nimi}}</a>
+        <span style="color: green;" *ngIf="alkoService.availabilityObj[alcoholProduct.Numero]"> S</span>
+        <span style="color: red;" *ngIf="!alkoService.availabilityObj[alcoholProduct.Numero]"> E</span>
+      </h5>
+      <div class="container col-8">
+        <div style="background-color: #a0beac59; padding-left: 5px; padding-bottom: 5px;">
+          <div class="row">
+              <div class="col-6" style="text-align: left;">Tuotetyyppi</div>
+              <div style="text-align: left;" class="col-6" *ngIf="alcoholProduct.Tyyppi !== 'Jälkiruokaviinit, väkevöidyt ja muut viinit'">{{alcoholProduct.Tyyppi}}</div>
+              <div style="text-align: left;" class="col-6" *ngIf="alcoholProduct.Tyyppi === 'Jälkiruokaviinit, väkevöidyt ja muut viinit'">muut viinit</div>
+          </div>
+          <div class="row">
+              <div class="col-6" style="text-align: left;">% Alko</div>
+              <div class="col-6" style="text-align: left;">{{alcoholProduct.ProsAlkohol}}%</div>
+          </div>
+          <div class="row">
+              <div class="col-6" style="text-align: left;">Pakkaustyyppi</div>
+              <div class="col-6" style="text-align: left;">{{alcoholProduct.Pakkaustyyppi}}</div>
+          </div>
+          <div class="row">
+              <div class="col-6" style="text-align: left;">Hinta</div>
+              <div class="col-6" style="text-align: left;">{{alcoholProduct.Hinta}}€</div>
+          </div>
+          <div class="row">
+              <div class="col-6" style="text-align: left;">Litrahinta</div>
+              <div class="col-6" style="text-align: left;">{{alcoholProduct.Litrahinta}}€/L</div>
+          </div>
+          <div class="row">
+              <div class="col-6" style="text-align: left;">1L - C<sub>2</sub>H<sub>6</sub>O</div>
+              <div class="col-6" style="text-align: left;">{{alcoholProduct.EurPerLAlkohol}}€/L</div>
+          </div>
+        </div>
+        <div style="justify-content: center; margin-top: 15px; margin-bottom: 15px;">
+          <div>
+            {{alcoholProduct.Luonnehdinta}}
+          </div>
+        </div>
+      </div>
+      <div class="container col-4" style="padding-right: 10px; padding-left: 0;">
+        <img style="width: 100%; max-width: 160px;" src="{{'https://images.alko.fi/images/cs_srgb,f_auto,t_products/cdn/' + alcoholProduct.Numero + '/a.jpg'}}">
+      </div>
+    </ng-container>
+  </div>
+</div>

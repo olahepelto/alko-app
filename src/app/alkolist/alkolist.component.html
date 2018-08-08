@@ -52,5 +52,6 @@
 <app-product-search></app-product-search>
 <app-pagination></app-pagination>
 
-<app-alkolist-desktop *ngIf="!alkoService.mobileEnabled"></app-alkolist-desktop>
-<app-alkolist-mobile *ngIf="alkoService.mobileEnabled"></app-alkolist-mobile>
+<app-alkolist-desktop *ngIf="!alkoService.mobileEnabled && !alkoService.betaEnabled"></app-alkolist-desktop>
+<app-alkolist-mobile *ngIf="alkoService.mobileEnabled && !alkoService.betaEnabled"></app-alkolist-mobile>
+<app-alkolist-beta *ngIf="alkoService.betaEnabled"></app-alkolist-beta>

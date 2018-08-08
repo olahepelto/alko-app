@@ -14,6 +14,7 @@ export class AlkoService {
   public productSearchContent = '';
 
   public mobileEnabled;
+  public betaEnabled = false;
 
   public alko_stores = [];
 
@@ -61,6 +62,7 @@ export class AlkoService {
     this.generateAlkoData();
     if (document.cookie !== '') {
       this.selectedAlko = this.getCookie('selectedAlko');
+      this.betaEnabled = this.getCookie('betaEnabled') === '1';
     }
   }
 
@@ -71,6 +73,12 @@ export class AlkoService {
   setSelectedAlko(alko: any) {
     this.selectedAlko = alko;
     document.cookie = 'selectedAlko=' + alko;
+    this.refreshAvailability();
+  }
+  toggleBetaMode() {
+    alkoService.betaEnabled = !alkoService.betaEnabled;
+
+    document.cookie = alkoService.betaEnabled ? 'betaEnabled=1' : 'betaEnabled=0';
     this.refreshAvailability();
   }
 
@@ -163,7 +171,7 @@ export class AlkoService {
     return array;
   }
 
-  async generatePageData() {
+  public async generatePageData() {
     this.activeProducts = [];
     let searchTermsList = this.productSearchContent.split(' ');
     searchTermsList.forEach(string => {
