@@ -8,7 +8,7 @@ This Alko data viewer was created as a weekend project just for fun. This projec
 * Compact & Loose versions
 * Mobile version
 * Sort by for example **price/1L** or **price/1L ethanol**
-* Different sortin options
+* Different sorting options
 * Link to the alko product page
 * Hover to see image
 
