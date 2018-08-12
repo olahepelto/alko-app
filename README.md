@@ -1,5 +1,5 @@
 # AlkoApp
-This app was created as a weekend project just for fun. It can be used with alko-scraper to scrape data from the alko website periodically.
+This Alko data viewer was created as a weekend project just for fun.
 
 ## Features
 * Sort by for example **price/1L** or **price/1L ethanol**
