@@ -12,8 +12,6 @@ This Alko data viewer was created as a weekend project just for fun. This projec
 * Hover to see image
 
 ## Images
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://raw.githubusercontent.com/olahepelto/alko-app/master/images/Screenshot2.png "Screenshot 1")
+![alt text](https://raw.githubusercontent.com/olahepelto/alko-app/master/images/Screenshot3.png "Screenshot 2")
+![alt text](https://raw.githubusercontent.com/olahepelto/alko-app/master/images/Screenshot4.png "Screenshot 3")
