@@ -1,0 +1,13 @@
+{
+  "name": "Alko Aggregator",
+  "short_name": "Alko App",
+  "icons": [
+    {
+      "src": "https://www.alko.fi/INTERSHOP/static/WFS/Alko-OnlineShop-Site/-/Alko-OnlineShop/fi_FI/Uutishuoneen%20ladattavat%20kuvat/alko_logo_90mm_cmyk_300dpi.jpg",
+      "sizes": "48x48 72x72 96x96 144x144 168x168 192x192",
+      "type": "image/jpg"
+    }
+  ],
+  "display": "standalone",
+  "orientation": "portrait"
+}
