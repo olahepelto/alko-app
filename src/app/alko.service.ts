@@ -16,6 +16,8 @@ export class AlkoService {
   public mobileEnabled;
   public betaEnabled = false;
 
+  public superAlkoEnabled = false;
+
   public alko_stores = [];
 
   public activePage = 0;
@@ -58,12 +60,12 @@ export class AlkoService {
 
   constructor(private http: HttpClient, private _cacheService: CacheService, public csvParser: PapaParseService) {
     alkoService = this;
-    console.log(this);
-    this.generateAlkoData();
     if (document.cookie !== '') {
       this.selectedAlko = this.getCookie('selectedAlko');
       this.betaEnabled = this.getCookie('betaEnabled') === '1';
+      this.superAlkoEnabled = this.getCookie('superAlkoEnabled') === '1';
     }
+    this.generateAlkoData();
   }
 
   public getProductsOnPage(activePage: any) {
@@ -79,6 +81,13 @@ export class AlkoService {
     alkoService.betaEnabled = !alkoService.betaEnabled;
 
     document.cookie = alkoService.betaEnabled ? 'betaEnabled=1' : 'betaEnabled=0';
+    this.refreshAvailability();
+  }
+  toggleAlkoMode() {
+    alkoService.superAlkoEnabled = !alkoService.superAlkoEnabled;
+
+    document.cookie = alkoService.superAlkoEnabled ? 'superAlkoEnabled=1' : 'superAlkoEnabled=0';
+    this.generateAlkoData();
     this.refreshAvailability();
   }
 
@@ -107,25 +116,27 @@ export class AlkoService {
     });
 
 
-    fetch('./assets/alko_products.csv')
+    fetch(this.superAlkoEnabled ? './assets/super_alko_products.csv' : './assets/alko_products.csv')
     .then(function(response) {
       return response.text();
     }).then(function(body) {
+      alkoService.alkoObj = [];
       alkoService.csvParser.parse(body, {
         complete: (results, file) => {
           results.data.forEach((line) => {
-            if (parseFloat(line[9]) > 30) {
+
+            if (parseFloat(line[9]) > 28) {
               alkoService.alkoObj.push({
                 'Numero': line[0],
                 'Nimi': line[1],
-                'Pullokoko': parseFloat(line[2]),
-                'Hinta': parseFloat(line[3]),
-                'Litrahinta': parseFloat(line[4]),
+                'Pullokoko': Math.round(parseFloat(line[2]) * 100) / 100,
+                'Hinta': Math.round(parseFloat(line[3].replace(',', '.')) * 100) / 100,
+                'Litrahinta': Math.round(parseFloat(line[4].replace(',', '.')) * 100) / 100,
                 'Tyyppi': line[5],
                 'Luonnehdinta': line[6],
                 'Pakkaustyyppi': line[7],
-                'ProsAlkohol': parseFloat(line[8]),
-                'EurPerLAlkohol': parseFloat(line[9])
+                'ProsAlkohol': Math.round(parseFloat(line[8].replace(',', '.')) * 100) / 100,
+                'EurPerLAlkohol': Math.round(parseFloat(line[9].replace(',', '.')) * 100) / 100
               });
             }
           });
@@ -181,7 +192,7 @@ export class AlkoService {
     });
 
     this.alkoObj.forEach((product) => {
-      if (this.enabledCategories.indexOf(product.Tyyppi) !== -1) {
+      if (this.enabledCategories.indexOf(product.Tyyppi) !== -1 || product.Tyyppi === '-') {
         if (searchTermsList.length !== 0) {
           for (const a of searchTermsList) {
             if (product.Nimi.toLowerCase().indexOf(a.toLowerCase()) === -1) {

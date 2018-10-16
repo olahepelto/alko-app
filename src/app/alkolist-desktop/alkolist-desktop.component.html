@@ -13,21 +13,21 @@
   <div class="row" style="background-color: #a0beac3d; margin-bottom: 2px;"
        *ngFor="let alcoholProduct of alkoService.getProductsOnPage(alkoService.activePage); let i = index">
 
-    <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1"><!--EurPerLAlkohol > 30 | Removes the broken products-->
+    <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1 || alcoholProduct.Tyyppi === '-'"><!--EurPerLAlkohol > 30 | Removes the broken products-->
       <div class="col-xs-12 col-1" style="text-align: left;">
         <span style="color: green;" *ngIf="alkoService.availabilityObj[alcoholProduct.Numero]">Saatavilla</span>
         <span style="color: red;" *ngIf="!alkoService.availabilityObj[alcoholProduct.Numero]">Ei Saatavilla</span>
       </div>
       <div class="col-3" style="text-align: left;">
-        <img [ngClass]="{'image-big' : productHover[i], 'image-hidden' : !productHover[i]}" src="{{'https://images.alko.fi/images/cs_srgb,f_auto,t_products/cdn/' + alcoholProduct.Numero + '/a.jpg'}}">
-        <a style="color: #212529; text-decoration:none;" (mouseenter)="productHover[i] = true" (mouseleave)="productHover[i] = false" href="{{'https://www.alko.fi/tuotteet/' + alcoholProduct.Numero}}">
+        <img *ngIf='!alkoService.superAlkoEnabled' [ngClass]="{'image-big' : productHover[i], 'image-hidden' : !productHover[i]}" src="{{'https://images.alko.fi/images/cs_srgb,f_auto,t_products/cdn/' + alcoholProduct.Numero + '/a.jpg'}}">
+        <a style="color: #212529; text-decoration:none;" (mouseenter)="productHover[i] = true" (mouseleave)="productHover[i] = false" href="{{(alkoService.superAlkoEnabled ? 'https://m.viinarannasta.ee/tuoteryhmat/3/5/' : 'https://www.alko.fi/tuotteet/') + alcoholProduct.Numero}}">
           {{alcoholProduct.Nimi}}
         </a>
       </div>
       <div class="col-2" *ngIf="alcoholProduct.Tyyppi !== 'Jälkiruokaviinit, väkevöidyt ja muut viinit'">{{alcoholProduct.Tyyppi}}</div>
       <div class="col-2" *ngIf="alcoholProduct.Tyyppi === 'Jälkiruokaviinit, väkevöidyt ja muut viinit'">muut viinit</div>
 
-      <div class="col-1">{{alcoholProduct.Pullokoko}}L</div>
+      <div class="col-1">{{alkoService.superAlkoEnabled ? '-' : alcoholProduct.Pullokoko + 'L'}}</div>
       <div class="col-1">{{alcoholProduct.ProsAlkohol}}%</div>
       <div class="col-1">{{alcoholProduct.Pakkaustyyppi}}</div>
       <div class="col-1">{{alcoholProduct.Hinta}}€</div>

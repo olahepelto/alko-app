@@ -2,12 +2,12 @@
   <div class="row" style="background-color: #a0beac3d; margin-bottom: 3px;"
        *ngFor="let alcoholProduct of alkoService.getProductsOnPage(alkoService.activePage)">
 
-    <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1 && alcoholProduct.EurPerLAlkohol > 30">
+    <ng-container *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1 && alcoholProduct.EurPerLAlkohol > 28  || alcoholProduct.Tyyppi === '-'">
       <h5 style="width: 100%; margin-top: 7px;">
-        <span style="color: gray;">{{alcoholProduct.Pullokoko}}L </span>
+        <span style="color: gray;">{{alkoService.superAlkoEnabled ? '' : alcoholProduct.Pullokoko + 'L'}} </span>
         <a style="color: black; text-decoration:none;" href="{{'https://www.alko.fi/tuotteet/' + alcoholProduct.Numero}}">{{alcoholProduct.Nimi}}</a>
-        <span style="color: green;" *ngIf="alkoService.availabilityObj[alcoholProduct.Numero]"> S</span>
-        <span style="color: red;" *ngIf="!alkoService.availabilityObj[alcoholProduct.Numero]"> E</span>
+        <span style="color: green;" *ngIf="alkoService.availabilityObj[alcoholProduct.Numero] && !alkoService.superAlkoEnabled"> S</span>
+        <span style="color: red;" *ngIf="!alkoService.availabilityObj[alcoholProduct.Numero] && !alkoService.superAlkoEnabled"> E</span>
       </h5>
 
       <div class="col-8">
@@ -47,7 +47,7 @@
       </div>
     </ng-container>
 
-    <div class="col-4" style="padding-right: 10px; padding-left: 0;">
+    <div *ngIf='!alkoService.superAlkoEnabled' class="col-4" style="padding-right: 10px; padding-left: 0;">
       <img style="width: 100%; max-width: 160px;" src="{{'https://images.alko.fi/images/cs_srgb,f_auto,t_products/cdn/' + alcoholProduct.Numero + '/a.jpg'}}">
     </div>
   </div>

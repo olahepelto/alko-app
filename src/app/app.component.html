@@ -8,6 +8,7 @@
       <span style="margin-right: 20px;">{{alkoService.selectedAlko}}</span>
       <a style="margin-right: 20px;" href="#" class="alert-link" data-toggle="modal" data-target="#myModal">Valitse alko</a>
       <a *ngIf="!alkoService.mobileEnabled" style="margin-right: 20px;" href="#" class="alert-link" (click)="alkoService.toggleBetaMode()">Beta version</a>
+      <a style="margin-right: 20px;" href="#" class="alert-link" (click)="alkoService.toggleAlkoMode()">{{alkoService.superAlkoEnabled ? "Alko" : "Super Alko"}}</a>
     </span>
   </nav>
 

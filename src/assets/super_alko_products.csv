@@ -1,0 +1,720 @@
+Numero;Nimi;Pullokoko;Hinta;Litrahinta;Tyyppi;Luonnehdinta;Pakkaustyyppi;ProsAlkohol;EurPerLAlkohol
+24007;Marani Akhasheni 11,5% 75cl;-;8,5;11,33;-;-;-;11,5;98,52173913
+24009;Marani Kindzmarauli 11,5% 75cl;-;8,99;11,99;-;-;-;11,5;104,2608696
+24006;Angostura 1919 8YO 40% 70cl;-;32,99;47,13;-;-;-;40;117,825
+24008;Marani Mukuzani 14% 75cl;-;10,99;14,65;-;-;-;14;104,6428571
+24025;Domaine du Chardonnay Chablis 12,5% 75cl;-;16,5;22;-;-;-;12,5;176
+24039;Black Velvet 40% 100cl;-;20,5;20,5;-;-;-;40;51,25
+24041;Bernard-Massard Rivaner 11,5% 75cl;-;8,99;11,99;-;-;-;11,5;104,2608696
+24040;Freegold Rosado 12% 300cl BIB;-;14,5;4,83;-;-;-;12;40,25
+24054;Happy Cat Gold Mosel Riesling 10% 50cl;-;8,5;17;-;-;-;10;170
+24055;Westons Wyld Wood Still Organic 6% 300cl BIB;-;12,99;4,33;-;-;-;6;72,16666667
+24048;Castillo Lagomar Tinto 10% 75cl;-;3,99;5,32;-;-;-;10;53,2
+24078;Freegold Tinto 12% 300cl BIB;-;14,5;4,83;-;-;-;12;40,25
+24079;Freegold Blanco 12% 300cl BIB;-;14,5;4,83;-;-;-;12;40,25
+24093;Cinzano Rosso 15% 100cl;-;9,99;9,99;-;-;-;15;66,6
+24094;Happy Cat Rose Mosel Riesling 10% 50cl;-;8,5;11,33;-;-;-;10;113,3
+24096;Blue Nun Riesling 11% 75cl;-;6,99;9,32;-;-;-;11;84,72727273
+24113;Courriere Napoleon VSOP 36% 50cl PET;-;10,99;21,98;-;-;-;36;61,05555556
+24112;Veuve Clicquot Rose Champagne 12,5% 75cl;-;51,99;69,32;-;-;-;12,5;554,56
+24117;Fernando De Castilla Solera Resreva 36% 70cl;-;20,5;27,33;-;-;-;36;75,91666667
+24122;Eesti Standard Vodka 40% 50cl PET;-;8,5;17;-;-;-;40;42,5
+24121;Cidre Bouche de Normandie 5% 75cl;-;3,99;5,32;-;-;-;5;106,4
+24129;De Kuyper Sour Apple 15% 50cl;-;8,99;17,98;-;-;-;15;119,8666667
+24134;Conde Pinel Tempranillo 12,5% 300cl BIB;-;13,99;4,66;-;-;-;12,5;37,28
+24130;Maori Bay Sauvignon Blanc 12,5% 75cl;-;7,5;10;-;-;-;12,5;80
+24139;Jacobs Creek Chardonnay Pinot Noir Brut Cuvee 11,5% 75cl;-;7,99;10,65;-;-;-;11,5;92,60869565
+24143;Campo Viejo Cava Brut Reserva 11,5% 75cl;-;6,5;8,67;-;-;-;11,5;75,39130435
+24161;Zenato Valpolicella Ripassa Superiore DOC 14% 75cl;-;16,99;22,65;-;-;-;14;161,7857143
+24178;De Kuyper Grapefruit 15% 50cl;-;11,5;23;-;-;-;15;153,3333333
+24180;Jims Creek Chardonnay 12,5% 300cl BIB;-;15,99;5,33;-;-;-;12,5;42,64
+24181;Jims Creek Shiraz Cabernet Sauvignon 13,5% 300cl BIB;-;15,99;5,33;-;-;-;13,5;39,48148148
+24186;De Kuyper Blue Curacao 24% 50cl;-;9,99;19,98;-;-;-;24;83,25
+24194;De Kuyper Triple Sec 40% 50cl;-;13,99;27,98;-;-;-;40;69,95
+24197;Underberg Mini 44% 2cl;-;1,75;87,5;-;-;-;44;198,8636364
+24202;De Kuyper Pina Colada 14,5% 70cl;-;11,5;16,43;-;-;-;14,5;113,3103448
+24213;Villa Maria Private Bin Pinot Noir 13,5% 75cl;-;11,5;15,33;-;-;-;13,5;113,5555556
+24212;Villa Maria Private Bin Dry Riesling 12% 75cl;-;10,99;14,65;-;-;-;12;122,0833333
+24211;Villa Maria Private Bin Sauvignon Blanc 13% 75cl;-;10,99;14,65;-;-;-;13;112,6923077
+24201;Beefeater Gin 47% 50cl PET;-;12,99;25,98;-;-;-;47;55,27659574
+24224;Dr.Loosen Riesling 8,5% 75cl;-;8,99;11,99;-;-;-;8,5;141,0588235
+24223;Villa Wolf Riesling 11% 75cl;-;10,5;14;-;-;-;11;127,2727273
+24225;Russky Standart Gold 40% 100cl;-;27,99;27,99;-;-;-;40;69,975
+24231;Stones Original Green Ginger Wine 13,5% 70cl;-;6,5;9,29;-;-;-;13,5;68,81481481
+24239;Glenmorangie 12YO Lasanta 46% 70cl;-;54,99;78,56;-;-;-;46;170,7826087
+24235;Hereford White Wine 12,5% 75cl;-;3,99;5,32;-;-;-;12,5;42,56
+24237;Torres San Valentin 11% 300cl BIB;-;16,99;5,66;-;-;-;11;51,45454545
+24238;Tanqueray 47,3% 100cl;-;31,99;31,99;-;-;-;47,3;67,63213531
+24229;Torres Sangre de Toro 13,5% 300cl BIB;-;18,99;6,33;-;-;-;13,5;46,88888889
+24240;Castillo de Molina Reserva Cabernet Sauvignon 14% 75cl;-;11,5;15,33;-;-;-;14;109,5
+24241;Castillo de Molina Reserva Pinot Noir 14% 75cl;-;9,99;13,32;-;-;-;14;95,14285714
+24242;Castillo de Molina Reserva Chardonnay 14% 75cl;-;11,5;15,33;-;-;-;14;109,5
+24248;Wolfberger Riesling vin d Alsace 12% 75cl;-;9,99;13,32;-;-;-;12;111
+24252;Don Cruzado Silver 38% 70cl;-;17,99;25,7;-;-;-;38;67,63157895
+24259;Monte Cristo Red 10% 75cl;-;3,5;4,67;-;-;-;10;46,7
+24260;Monte Cristo White 10% 75cl;-;3,5;4,67;-;-;-;10;46,7
+24262;Dom Dinis Reserva 13% 75cl;-;6,99;9,32;-;-;-;13;71,69230769
+24264;Boscaini Valpolicella Classico Ca Bussin 12,5% 75cl;-;9,99;13,32;-;-;-;12,5;106,56
+24263;Boscaini Valpolicella DOC Classico Superiore Ripasso La Preosa 13,5% 75cl;-;12,99;17,32;-;-;-;13,5;128,2962963
+24280;Sovetskoje Rozovoje Semi Sweet 10% 75cl;-;3,5;4,67;-;-;-;10;46,7
+24281;Don Luciano Brut 11% 75cl;-;4,5;6;-;-;-;11;54,54545455
+24283;Zonin Valpolicella Ripasso Superiore 14% 75cl;-;10,99;14,65;-;-;-;14;104,6428571
+24282;Don Luciano Semi-Seco 11% 75cl;-;4,5;6;-;-;-;11;54,54545455
+24284;Sheridans 15,5% 70cl;-;23,99;34,27;-;-;-;15,5;221,0967742
+24290;Raimat Abadia Cabernet Sauvignon Tempranillo  14% 75cl;-;7,99;10,65;-;-;-;14;76,07142857
+24295;Vecchia Romagna 38% 70cl;-;18,99;27,13;-;-;-;38;71,39473684
+24289;Pata Negra Gran Reserva 13% 75cl;-;6,99;9,32;-;-;-;13;71,69230769
+24293;Beefeater 24  45% 70cl;-;25,5;36,43;-;-;-;45;80,95555556
+24291;Raimat Solana Chardonnay Albarino 13% 75cl;-;7,99;10,65;-;-;-;13;81,92307692
+24298;JÃ¤germeister 35% 175cl;-;36,99;21,14;-;-;-;35;60,4
+24308;Robertson Pinotage 13,5% 75cl;-;5,5;7,33;-;-;-;13,5;54,2962963
+24309;Faustino VII Tinto 13% 75cl;-;8,99;11,99;-;-;-;13;92,23076923
+24316;Marques de Riscal Reserva 14% 150cl;-;32,99;21,99;-;-;-;14;157,0714286
+24321;Larsen Viking Ship 40% 70cl;-;161,99;231,41;-;-;-;40;578,525
+24329;Tullamore Dew 12YO 40% 70cl;-;32,99;47,13;-;-;-;40;117,825
+24331;Sake Gekkeikan 14,6% 75cl;-;9,99;13,32;-;-;-;14,6;91,23287671
+24328;Chimay Blue 9% 33cl;-;3,5;10,61;-;-;-;9;117,8888889
+24332;Johannes Egberts Liebfraumilch 8,5% 300cl BIB;-;16,99;5,66;-;-;-;8,5;66,58823529
+24336;Tullamore Dew 40% 70cl TIN TUBE;-;22,5;32,14;-;-;-;40;80,35
+24330;Jura Single Malt 10YO 40% 70cl;-;45,5;65;-;-;-;40;162,5
+24345;Antano Tempranillo Rioja 13% 75cl;-;5,99;7,99;-;-;-;13;61,46153846
+24350;Saku Originaal 5,2% 24x33cl;-;17,99;2,27;-;-;-;5,2;43,65384615
+24347;A.Le Coq Premium 5,2% 24x33cl;-;16,99;2,15;-;-;-;5,2;41,34615385
+24348;A.Le Coq Premium 4,7% 50cl PURK;-;1,5;3;-;-;-;4,7;63,82978723
+24362;Viru Valge 40% 50cl PET;-;10,5;21;-;-;-;40;52,5
+24368;Sandeman Fino Sherry 15% 75cl;-;11,99;15,99;-;-;-;15;106,6
+24373;Glenmorangie Nectar D Or 46% 70cl;-;64;91,43;-;-;-;46;198,7608696
+24378;Golden Cap Perry 4,7% 24x33cl;-;19,99;2,52;-;-;-;4,7;53,61702128
+24366;Moet & Chandon Rose Imperial Champagne 12% 75cl;-;49,99;66,65;-;-;-;12;555,4166667
+24367;Veuve Clicquot Demi-Sec Champagne 12% 75cl;-;44,99;59,99;-;-;-;12;499,9166667
+24396;Hendricks Gin 41,4% 70cl;-;31,5;45;-;-;-;41,4;108,6956522
+24395;Angostura 1824 12YO 40% 70cl;-;59;84,29;-;-;-;40;210,725
+24397;Grand Cavalier 38% 50cl;-;10,5;21;-;-;-;38;55,26315789
+24399;Cafe de Paris Brut 11,5% 75cl;-;5,5;7,33;-;-;-;11,5;63,73913043
+24398;Glenfiddich 15YO Single Malt 40% 70cl TUBE;-;41,99;59,99;-;-;-;40;149,975
+24403;Couronne Brandy 36% 50cl PET;-;8,99;17,98;-;-;-;36;49,94444444
+24404;Zelenaja Marka Traditsionnaja Retseptura 40% 100cl;-;21,99;21,99;-;-;-;40;54,975
+24413;Marskin Ryyppy 40% 50cl;-;18,99;37,98;-;-;-;40;94,95
+24411;Codorniu Cava Clasico Brut 11,5% 75cl;-;7,5;10;-;-;-;11,5;86,95652174
+24425;Pere Magloire VSOP 40% 50cl;-;25,99;51,98;-;-;-;40;129,95
+24426;Rosemount Estate Chardonnay Semillion 12,5% 75cl;-;7,99;10,65;-;-;-;12,5;85,2
+24427;De Kuyper Wild Strawberry 23% 50cl;-;12,5;25;-;-;-;23;108,6956522
+24431;Undurraga Aliwen Reserva Cabernet Sauvignon Syrah 14% 75cl;-;7,5;10;-;-;-;14;71,42857143
+24435;Pere Magloire Fine VS Calvados 40% 100cl;-;36,99;36,99;-;-;-;40;92,475
+24434;Frontera Late Harvest 12% 75cl;-;5,5;7,33;-;-;-;12;61,08333333
+24433;Frontera Sauvignon Blanc 12,5% 75cl;-;5,5;7,33;-;-;-;12,5;58,64
+24438;The Balvenie Doublewood 12YO 40% 70cl;-;59,99;85,7;-;-;-;40;214,25
+24436;Glenmorangie 12YO Quinta Ruban 46% 70cl;-;62,99;89,99;-;-;-;46;195,6304348
+24437;Branca Menta 28% 50cl;-;17,99;35,98;-;-;-;28;128,5
+24442;De Kuyper Apricot Brandy 24% 50cl;-;12,99;25,98;-;-;-;24;108,25
+24441;De Kuyper Creme De Bananes 24% 50cl;-;11,99;23,98;-;-;-;24;99,91666667
+24450;Peter Lehmann Shiraz Barossa 14,5% 75cl;-;8,99;11,99;-;-;-;14,5;82,68965517
+24448;Bacardi & Cola 7% 25cl TIN;-;1,6;6,4;-;-;-;7;91,42857143
+24444;Taittinger Brut Reserve Champagne 12,5% 75cl;-;38,99;51,99;-;-;-;12,5;415,92
+24451;Peter Lehmann Classic Riesling 11% 75cl;-;8,5;11,33;-;-;-;11;103
+24456;Errazuriz Estate Series Sauvignon Blanc 13,5% 75cl;-;9,5;12,67;-;-;-;13,5;93,85185185
+24459;Santa Carolina Chardonnay 13% 75cl;-;4,99;6,65;-;-;-;13;51,15384615
+24464;Casillero del Diablo Sauvignon Blanc 12,5% 75cl;-;7,5;10;-;-;-;12,5;80
+24463;Hartwall Original Long Drink Cranberry 5,5% 24x33cl;-;23,99;3,03;-;-;-;5,5;55,09090909
+24460;Santa Carolina Cabernet Sauvignon 13% 75cl;-;4,99;6,65;-;-;-;13;51,15384615
+24462;Senorio de los Llanos Crianza 12,5% 75cl;-;4,99;6,65;-;-;-;12,5;53,2
+24461;Santa Carolina Merlot 12,5% 75cl;-;4,99;6,65;-;-;-;12,5;53,2
+24465;Casillero del Diablo Pinot Noir 13,5% 75cl;-;7,5;10;-;-;-;13,5;74,07407407
+24466;KWV Cabernet Sauvignon 13,5% 75cl;-;6,99;9,32;-;-;-;13,5;69,03703704
+24468;De Kuyper Creme De Cassis 15% 50cl;-;11,99;23,98;-;-;-;15;159,8666667
+24469;De Kuyper Parfait Amour 30% 50cl;-;13,99;27,98;-;-;-;30;93,26666667
+24477;Yellow Tail Sauvignon Blanc 11,5% 75cl;-;7,5;10;-;-;-;11,5;86,95652174
+24475;Guinness 4,2% 44cl TIN;-;1,8;3,6;-;-;-;4,2;85,71428571
+24467;De Kuyper Cherry 24% 50cl;-;12,5;25;-;-;-;24;104,1666667
+24476;De Kuyper Creme De Cafe 20% 50cl;-;11,99;23,98;-;-;-;20;119,9
+24478;Yellow Tail Cabernet Sauvignon 13,5% 75cl;-;7,5;10;-;-;-;13,5;74,07407407
+24481;Cafe de Paris Demi-Sec 11,5% 75cl;-;5,5;7,33;-;-;-;11,5;63,73913043
+24501;Jaloviina 38% 100cl PET;-;19,99;19,99;-;-;-;38;52,60526316
+24500;Koskenkorva Lakritsi 30% 50cl PET;-;9,99;19,98;-;-;-;30;66,6
+24505;Masi Costasera Amarone Classico 15% 75cl;-;29,99;39,99;-;-;-;15;266,6
+24519;Norton Barrel Select Malbec 13,5% 75cl;-;6,99;9,32;-;-;-;13,5;69,03703704
+24520;Norton Barrel Select Cabernet Sauvignon 14% 75cl;-;7,5;10;-;-;-;14;71,42857143
+24528;Saku Originaal 4,7% 50cl TIN;-;1,5;3;-;-;-;4,7;63,82978723
+24523;Finlandia Grapefruit 37,5% 50cl;-;11,99;23,98;-;-;-;37,5;63,94666667
+24526;J.P.Chenet Merlot 13% 75cl;-;5,5;7,33;-;-;-;13;56,38461538
+24547;Quay Landing Colombard Chardonnay 12,5% 300cl BIB;-;16,99;5,66;-;-;-;12,5;45,28
+24541;Lindemans Bin 95 Sauvignon Blanc 12% 75cl;-;7,99;10,65;-;-;-;12;88,75
+24548;Piqueras Sauvignon-Verdejo 12,5% 300cl BIB;-;14,99;5;-;-;-;12,5;40
+24544;Krombacher Pils 4,8% 50cl TIN;-;1,4;2,8;-;-;-;4,8;58,33333333
+24551;Bernard-Massard Brut 12% 75cl;-;12,5;16,67;-;-;-;12;138,9166667
+24549;Raimat Abadia Cabernet Sauvignon Tempranillo 14% 300cl BIB;-;19,99;6,66;-;-;-;14;47,57142857
+24546;Quay Landing Shiraz 13% 300cl BIB;-;16,99;5,66;-;-;-;13;43,53846154
+24561;Santa Helena Seleccion del Dieectorio Gran Reserva Chardonnay 14% 75cl;-;8,99;11,99;-;-;-;14;85,64285714
+24565;Claude Chatelier VS 40% 50cl PET;-;17,99;35,98;-;-;-;40;89,95
+24564;Claude Chatelier VSOP 40% 50cl PET;-;18,99;37,98;-;-;-;40;94,95
+24567;Torres Santa Digna Reserva Cabernet Sauvignon Rose 13% 75cl;-;7,99;10,65;-;-;-;13;81,92307692
+24569;Vergi Vodka 40% 20cl;-;3,99;19,95;-;-;-;40;49,875
+24570;Vergi Vodka 40% 100cl;-;15,99;15,99;-;-;-;40;39,975
+24579;J.P.Chenet Medium Sweet Red 12% 75cl;-;5,99;7,99;-;-;-;12;66,58333333
+24584;Carmina Luna White Wine 12% 300cl BIB;-;14,5;4,83;-;-;-;12;40,25
+24583;Carmina Luna Red Wine 14% 300cl BIB;-;13,5;4,5;-;-;-;14;32,14285714
+24586;Ukrainka Vodka 40% 50cl;-;9,99;19,98;-;-;-;40;49,95
+24588;Ukrainka Platinum 40% 50cl;-;10,5;21;-;-;-;40;52,5
+24599;Castellblanc Cava Rosado Semi Seco 12% 75cl;-;6,5;8,67;-;-;-;12;72,25
+24598;Leijona Pastilli Shot 30% 50cl PET;-;9,99;19,98;-;-;-;30;66,6
+24606;Krombacher Pils 4,8% 500cl;-;18,5;3,7;-;-;-;4,8;77,08333333
+24609;Gancia Asti DOCG 7,5% 75cl;-;8,5;11,33;-;-;-;7,5;151,0666667
+24610;Pisang Ambon Guarana Lime 20% 50cl;-;11,99;23,98;-;-;-;20;119,9
+24615;Crowmoor Dry Apple Cider 4,7% 24x33cl;-;21,99;2,78;-;-;-;4,7;59,14893617
+24619;Dreamer Late Harvest Chardonnay 11,5% 300cl BIB;-;15,99;5,33;-;-;-;11,5;46,34782609
+24625;Leijona Viina 32% 50cl PET;-;7,99;15,98;-;-;-;32;49,9375
+24623;Torres Sangre de Toro White 11,5% 75cl;-;7,99;10,65;-;-;-;11,5;92,60869565
+24637;Puls Ã•unasiider 4,5% 50cl TIN;-;0,99;1,98;-;-;-;4,5;44
+24638;Saunalahden Viina 38% 10x50cl PET;-;92,5;18,5;-;-;-;38;48,68421053
+24639;Saunalahden Viina 38% 50cl PET;-;9,99;19,98;-;-;-;38;52,57894737
+24640;Suomi Viina 32% 10x50cl PET;-;87,99;17,6;-;-;-;32;55
+24641;Suomi Viina 32% 50cl PET;-;8,99;17,98;-;-;-;32;56,1875
+24643;Nederburg Winemasters Reserve Riesling 13,5% 75cl;-;8,99;11,99;-;-;-;13,5;88,81481481
+24645;Peachtree 20% 70cl;-;14,99;21,41;-;-;-;20;107,05
+24647;Mandarine Napoleon 38% 70cl;-;30,5;43,57;-;-;-;38;114,6578947
+24650;Gibsons London Gin 37,5% 100cl;-;19,99;19,99;-;-;-;37,5;53,30666667
+24651;Stony Cape Pinotage Cinsault 13% 75cl;-;4,99;6,65;-;-;-;13;51,15384615
+24658;Sovetskoje Kristalnoje Semi Sweet 6% 75cl;-;2,5;3,33;-;-;-;6;55,5
+24656;Ecusson Cidre Brut 5% 75cl;-;4,5;6;-;-;-;5;120
+24657;Leijona Viina 32% 10x50cl;-;77,99;15,6;-;-;-;32;48,75
+24665;Raimat Moli Cabernet Sauvignon 14% 75cl;-;10,99;14,65;-;-;-;14;104,6428571
+24670;Riga Black Currant Balsam 30% 50cl PET;-;8,99;17,98;-;-;-;30;59,93333333
+24674;Matusalem Clasico 10YO 40% 70cl;-;23,99;34,27;-;-;-;40;85,675
+24672;Matusalem Solera 7YO 40% 70cl;-;20,99;29,99;-;-;-;40;74,975
+24675;Matusalem Gran Reserva 15YO 40% 70cl;-;29,5;42,14;-;-;-;40;105,35
+24673;Matusalem Platino 40% 70cl;-;20,5;29,29;-;-;-;40;73,225
+24678;Santa Marta Limoncello 25% 50cl;-;12,99;25,98;-;-;-;25;103,92
+24681;Westons Old Rosie 7,3% 50cl;-;3,4;6,8;-;-;-;7,3;93,15068493
+24708;Johann Brunner Riesling Rheinhessen 10,5% 75cl;-;5,5;7,33;-;-;-;10,5;69,80952381
+24711;Jameson 40% 2x100cl TWIN;-;46,99;46,99;-;-;-;40;117,475
+24713;Bonacchi Chianti Classico DOCG 13% 75cl;-;8,99;11,99;-;-;-;13;92,23076923
+24712;Senorio de los Llanos Gran Reserva 13% 75cl;-;5,99;7,99;-;-;-;13;61,46153846
+24714;Casal Garcia Vinho Verde Branco 9,5% 75cl;-;7,99;10,65;-;-;-;9,5;112,1052632
+24716;St. Elmo Colombard Chenin Blanc 12% 300cl BIB;-;15,99;5,33;-;-;-;12;44,41666667
+24717;Magyar Feher Bor White 11,5% 300cl BIB;-;15,99;5,33;-;-;-;11,5;46,34782609
+24719;Senorio  de los Llanos Reserva 13% 75cl;-;4,99;6,65;-;-;-;13;51,15384615
+24723;Hunawihr Vin D Alsace Pinot Blanc 12,5% 75cl;-;8,99;11,99;-;-;-;12,5;95,92
+24728;Saku Tume 6,7% 50cl;-;1,6;3,2;-;-;-;6,7;47,76119403
+24727;Tenuta di Sesta Brunello di Montalcino Riserva DOCG 14% 75cl;-;44,99;59,99;-;-;-;14;428,5
+24731;MINI Jacobs Creek Semillion Chardonnay 12,9% 18,7cl;-;6,5;34,76;-;-;-;12,9;269,4573643
+24725;Tenuta di Sesta Brunello di Montalcino DOCG 14,5% 75cl;-;29,99;39,99;-;-;-;14,5;275,7931034
+24732;MINI Jacobs Creek Shiraz Cabernet 13,9% 18,7cl;-;3,5;18,72;-;-;-;13,9;134,676259
+24737;Old Gruzia Saperavi Red Dry 13% 75cl;-;5,99;7,99;-;-;-;13;61,46153846
+24741;Riva Leone Barolo DOCG 14,5% 75cl;-;19,99;26,65;-;-;-;14,5;183,7931034
+24745;Vergi Long Drink Grapefruit 5,6% 24x33cl;-;15,99;2,02;-;-;-;5,6;36,07142857
+24752;Galliano Vanilla 30% 50cl;-;17,99;35,98;-;-;-;30;119,9333333
+24754;Senorio de los Llanos Tempranillo 12,5% 75cl;-;3,99;5,32;-;-;-;12,5;42,56
+24759;Meukow VSOP 40% 100cl;-;39,99;39,99;-;-;-;40;99,975
+24767;Remedia Black Currant Liqueur 18% 50cl PET;-;4,99;9,98;-;-;-;18;55,44444444
+24762;Meukow VSOP 40% 300cl;-;199,99;66,66;-;-;-;40;166,65
+24763;Remedia Cranberry Liqueur 18% 50cl PET;-;4,99;9,98;-;-;-;18;55,44444444
+24766;Remedia Wild Strawberry Liqueur 18% 50cl PET;-;4,99;9,98;-;-;-;18;55,44444444
+24765;Remedia Coffe Liqueur 18% 50cl PET;-;4,99;9,98;-;-;-;18;55,44444444
+24760;Meukow VS 40% 100cl;-;34,99;34,99;-;-;-;40;87,475
+24769;Imperial XII VSOP 36% 50cl PET;-;9,5;19;-;-;-;36;52,77777778
+24771;Anselmann Riesling Classic 12% 75cl;-;9,99;13,32;-;-;-;12;111
+24764;Remedia Cherry Liqueur 18% 50cl PET;-;4,99;9,98;-;-;-;18;55,44444444
+24772;Mannerheim Vodka 40% 50cl PET;-;9,99;19,98;-;-;-;40;49,95
+24782;A.Le Coq G:N Cranberry 5,5% 24x33cl;-;14,5;1,83;-;-;-;5.touko;33.2727272727272
+24780;Albert Bichot Chateau de Dracy Chardonnay 12,5% 75cl;-;16,5;22;-;-;-;12,5;176
+24781;Albert Bichot Chablis Premier Cru Les Vaillons 13% 75cl;-;27,99;37,32;-;-;-;13;287,0769231
+24788;Errazuriz Estate Series Cabernet Sauvignon 13,5% 75cl;-;9,5;12,67;-;-;-;13,5;93,85185185
+24792;Metaxa 5* 38% 100cl;-;29,99;29,99;-;-;-;38;78,92105263
+24793;Calvados Coquerel VSOP 40% 70cl;-;28,99;41,41;-;-;-;40;103,525
+24790;Metaxa 5*  38% 300cl;-;124,99;41,66;-;-;-;38;109,6315789
+24791;Calvados Coquerel Fine 40% 70cl;-;21,99;31,41;-;-;-;40;78,525
+24794;Calvados Coquerel XO 40% 70cl;-;37,99;54,27;-;-;-;40;135,675
+24801;Cono Sur Cabernet Sauvignon Carmenere Syrah Organic 12,5% 75cl;-;9,5;12,67;-;-;-;12,5;101,36
+24800;Bonacchi Orvieto Classico DOC 12% 75cl;-;5,99;7,99;-;-;-;12;66,58333333
+24804;Collavini Pinot Grigio 12,5% 75cl;-;9,99;13,32;-;-;-;12,5;106,56
+24805;Collavini Chardonnay Sassi Cavi 12,5% 75cl;-;8,99;11,99;-;-;-;12,5;95,92
+24807;Black Tower Dry Riesling 12% 300cl BIB;-;19,99;6,66;-;-;-;12;55,5
+24809;Meukow XO 40% 70cl;-;69,99;99,99;-;-;-;40;249,975
+24812;Nederburg Manor House Shiraz 14,5% 75cl;-;10,5;14;-;-;-;14,5;96,55172414
+24817;Drostdy-Hof Steen Chenin Blanc 11,5% 75cl;-;6,5;8,67;-;-;-;11,5;75,39130435
+24834;Torres 20 Hors d Age Brandy 40% 70cl;-;36,99;52,84;-;-;-;40;132,1
+24831;Ballantines 17YO 43% 70cl;-;59;84,29;-;-;-;43;196,0232558
+24835;Vina Maipo Sauvignon Blanc 11,5% 300cl BIB;-;15,99;5,33;-;-;-;11,5;46,34782609
+24827;Yellow Tail Bubbles 11,5% 75cl;-;8,99;11,99;-;-;-;11,5;104,2608696
+24845;Tommasi Crearo della Conca d Oro 13,5% 75cl;-;18,5;24,67;-;-;-;13,5;182,7407407
+24855;Tommasi Poggio al Tufo Rompicollo 13% 75cl;-;9,99;13,32;-;-;-;13;102,4615385
+24858;Schloss Marienlay Riesling Trocken 12% 75cl;-;15,99;21,32;-;-;-;12;177,6666667
+24856;Livon Pinot Grigio 12,5% 75cl;-;15,99;21,32;-;-;-;12,5;170,56
+24859;Pouilly Fume Les Logres, Guy Saget, Loire 12,5% 75cl;-;21,5;28,67;-;-;-;12,5;229,36
+24872;Bouchard Pere Fils Fleurie 13,5% 75cl;-;17,99;23,99;-;-;-;13,5;177,7037037
+24868;Moskovskaya Osobaya 40% 10x50cl;-;89;17,8;-;-;-;40;44,5
+24863;Joseph Drouhin Rully 12,5% 75cl;-;20,99;27,99;-;-;-;12,5;223,92
+24871;Domaine de Baron Arques 15% 75cl;-;38,99;51,99;-;-;-;15;346,6
+24870;Chateau de Terrefort-Quancard Bordeaux Superieur 12,5% 75cl;-;11,99;15,99;-;-;-;12,5;127,92
+24874;Espiritu de Chile Cabernet-Carmenere 13% 300cl BIB;-;16,99;5,66;-;-;-;13;43,53846154
+24873;Enrico Serafino Barbaresco 14% 75cl;-;26,99;35,99;-;-;-;14;257,0714286
+24877;Saaremaa Vodka Rabarber 37,5% 50cl;-;10,5;21;-;-;-;37,5;56
+24875;Espiritu de Chile GewÃ¼rztraminer-Semillon 12,5% 300cl BIB;-;16,99;5,66;-;-;-;12,5;45,28
+24882;Bonacchi Brunello di Montalcino 14,5% 75cl;-;26,99;35,99;-;-;-;14,5;248,2068966
+24893;Remedia Chocolate Liqueur 18% 50cl PET;-;4,99;9,98;-;-;-;18;55,44444444
+24892;Remedia Cloudberry Liqueur 18% 50cl PET;-;4,99;9,98;-;-;-;18;55,44444444
+24894;Remedia Blueberry Liqueur 18% 50cl PET;-;4,99;9,98;-;-;-;18;55,44444444
+24902;Prince Hubert de Polignac VS  40% 100cl;-;39,99;39,99;-;-;-;40;99,975
+24903;Somersby Pear Cider 4,5% 33cl KLAAS;-;1,3;3,94;-;-;-;4,5;87,55555556
+24907;Old Gruzia Alazani White Semi-Sweet 12% 75cl;-;5,99;7,99;-;-;-;12;66,58333333
+24905;Espiritu de Chile Shiraz Cabernet 12,5% 75cl;-;5,99;7,99;-;-;-;12,5;63,92
+24912;Remedia Almond Liqueur 18% 50cl PET;-;4,99;9,98;-;-;-;18;55,44444444
+24914;Hauller Riesling 13% 75cl;-;9,99;13,32;-;-;-;13;102,4615385
+24904;Espiritu de Chile  Chardonnay GewÃ¼rztraminer 12,5% 75cl;-;5,5;7,33;-;-;-;12,5;58,64
+24906;Luigi Righetti Campolieti Valpolicella Ripasso 13,5% 75cl;-;8,99;11,99;-;-;-;13,5;88,81481481
+24913;Remedia Orange Liqueur 18% 50cl PET;-;4,99;9,98;-;-;-;18;55,44444444
+24915;Hauller Gewurztraminer 13% 75cl;-;10,99;14,65;-;-;-;13;112,6923077
+24917;The Glenlivet 18Y Single Malt Whisky 43% 70cl;-;65,99;94,27;-;-;-;43;219,2325581
+24925;Bushmills Irish Whiskey 40% 100cl;-;23,99;23,99;-;-;-;40;59,975
+24926;Fishshot The Classic 30% 50cl PET;-;12,99;25,98;-;-;-;30;86,6
+24923;Hauller Sylvaner vin d Alsace 12% 75cl;-;7,99;10,65;-;-;-;12;88,75
+24922;Prince Hubert de Polignac VSOP 40% 100cl;-;39,99;39,99;-;-;-;40;99,975
+24927;Becherovka Original 38% 50cl;-;12,5;25;-;-;-;38;65,78947368
+24932;Zacapa Solera Gran Reserva 23YO 40% 70cl;-;55,99;79,99;-;-;-;40;199,975
+24929;Remedia Banana Liqueur 18% 50cl PET;-;4,99;9,98;-;-;-;18;55,44444444
+24933;Wolfberger W3 Riesling Muscat Pinot Gris 13% 75cl;-;9,5;12,67;-;-;-;13;97,46153846
+24936;Glen Scanlan Scotch Whisky 40% 100cl;-;21,5;21,5;-;-;-;40;53,75
+24934;Remedia Pineapple Liqueur 18% 50cl PET;-;4,99;9,98;-;-;-;18;55,44444444
+24938;Velkopopovicky Kozel Dark 3,8% 50cl TIN;-;1,6;3,2;-;-;-;3,8;84,21052632
+24947;Jack Daniels Black 40% 50cl;-;19,99;39,98;-;-;-;40;99,95
+24949;Finlandia Blackcurrant 37,5% 50cl;-;11,99;23,98;-;-;-;37,5;63,94666667
+24942;Gazela Vinho Verde 9% 75cl;-;6,99;9,32;-;-;-;9;103,5555556
+24946;Kumala Chenin Blanc Chardonnay 12% 300cl BIB;-;15,99;5,33;-;-;-;12;44,41666667
+24957;Ibis XO 36% 100cl;-;20,99;20,99;-;-;-;36;58,30555556
+24952;Moselland Riesling Kabinett 7,5% 300cl BIB;-;18,99;6,33;-;-;-;7,5;84,4
+24959;Castillo de Molina Reserva Sauvignon Blanc 13% 75cl;-;9,99;13,32;-;-;-;13;102,4615385
+24966;Jacobs Creek Reserve Shiraz 14,5% 75cl;-;8,5;11,33;-;-;-;14,5;78,13793103
+24962;Torres Vina Esmeralda 11,5% 300cl BIB;-;18,99;6,33;-;-;-;11,5;55,04347826
+24965;Jacobs Creek Reserve Riesling 11,4% 75cl;-;7,99;10,65;-;-;-;11,4;93,42105263
+24963;Torres Coronas Tempranillo 13,5% 300cl BIB;-;19,99;6,66;-;-;-;13,5;49,33333333
+24967;Westons Stowford Press  Cider 4,5% 50cl TIN;-;1,99;3,98;-;-;-;4,5;88,44444444
+24964;Hereford Red Wine 12% 75cl;-;3,99;5,32;-;-;-;12;44,33333333
+24971;Casillero del Diablo Carmenere 13,5% 75cl;-;7,5;10;-;-;-;13,5;74,07407407
+24968;Paulaner Hefe-Weissbier Naturtrüb 5,5% 50cl TIN;-;1,99;3,98;-;-;-;5,5;72,36363636
+24973;Prince Hubert de Polignac XO Royal 40% 70cl;-;64,99;92,84;-;-;-;40;232,1
+24975;Bacardi Oakheart 35% 100cl;-;19,99;19,99;-;-;-;35;57,11428571
+24978;Black Head Rum Black 37,5% 100cl;-;17,99;17,99;-;-;-;37,5;47,97333333
+24980;Tremblay-Marchive Chablis 12,5% 75cl;-;18,99;25,32;-;-;-;12,5;202,56
+24981;Les Vignerons- Recoltants dOrschwiller Alsace Riesling 12% 75cl;-;9,99;13,32;-;-;-;12;111
+24985;Prince Hubert de Polignac  XO 40% 50cl;-;39,99;79,98;-;-;-;40;199,95
+25000;Stolichnaya Elit Vodka 40% 70cl;-;36,5;52,14;-;-;-;40;130,35
+25001;Stella Artois Premium 5% 33cl;-;1,7;5,15;-;-;-;5;103
+25006;Peter Lehmann Clancys Shiraz Cabernet Merlot 14,5% 75cl;-;8,99;11,99;-;-;-;14,5;82,68965517
+25008;G.H. Mumm Cordon Rouge Brut Champagne Magnum 12% 150cl;-;78,99;52,66;-;-;-;12;438,8333333
+25009;Chateau Lafont Bordeaux 13,5% 75cl;-;7,99;10,65;-;-;-;13,5;78,88888889
+25017;Euraist Black Label 37% 50cl PET;-;11,99;23,98;-;-;-;37;64,81081081
+25033;Tokaji Furmint Dry 12,5% 75cl;-;4,99;6,65;-;-;-;12,5;53,2
+25036;Tokaji Kesöi Arany 10% 50cl;-;9,99;13,32;-;-;-;10;133,2
+25041;Monte Cristo Gold Sparkling Sweet 10% 75cl;-;3,99;5,32;-;-;-;10;53,2
+25040;Torres Las Mulas Reserve Cabernet Sauvignon Organic 14% 75cl;-;7,99;10,65;-;-;-;14;76,07142857
+25042;Gammel Dansk Bitter 38% 100cl;-;33,99;33,99;-;-;-;38;89,44736842
+25043;Leffe Brune 6,5% 33cl;-;2,5;7,58;-;-;-;6,5;116,6153846
+25049;Sandeman Tawny Porto 10YO 20% 75cl;-;21,99;29,32;-;-;-;20;146,6
+25053;Grey Goose Vodka 40% 100cl;-;63,5;63,5;-;-;-;40;158,75
+25054;Belvedere Vodka 40% 70cl;-;42,5;60,71;-;-;-;40;151,775
+25057;Museum Real Reserva 14,5% 75cl;-;15,5;22,14;-;-;-;14,5;152,6896552
+25058;Museum Vinea Tempranillo Crianza 14% 75cl;-;10,99;14,65;-;-;-;14;104,6428571
+25062;Yellow Tail Merlot 13,5% 75cl;-;7,5;10;-;-;-;13,5;74,07407407
+25060;JÃ¤germeister 35% 4cl MINI;-;1,6;40;-;-;-;35;114,2857143
+25070;Absolut Vanilia 40% 70cl;-;17,99;25,7;-;-;-;40;64,25
+25063;Yellow Tail Pinot Grigio 11,5% 75cl;-;7,5;10;-;-;-;11,5;86,95652174
+25072;Absolut Pears 40% 70cl;-;17,99;25,7;-;-;-;40;64,25
+25074;Absolut Citron 40% 70cl;-;17,99;25,7;-;-;-;40;64,25
+25071;Absolut Kurant 40% 70cl;-;17,99;25,7;-;-;-;40;64,25
+25077;Claude Chatelier XO 40% 70cl;-;46;65,71;-;-;-;40;164,275
+25079;Espiritu de Chile Cabernet Sauvignon Semi Sweet 12% 75cl;-;4,5;6;-;-;-;12;50
+25080;Espiritu de Chile Sauvignon Blanc Semi Sweet 12% 75cl;-;4,5;6;-;-;-;12;50
+25086;Sinebrychoff Long Drink Lime 5,5% 24x33cl;-;18,99;2,4;-;-;-;5,5;43,63636364
+25088;Lindemans Winemakers Release Chardonnay 13% 75cl;-;5,99;7,99;-;-;-;13;61,46153846
+25083;Newcastle Brown Ale 4,7% 50cl TIN;-;1,9;3,8;-;-;-;4,7;80,85106383
+25089;Brancott Estate Pinot Noir 13,5% 75cl;-;9,5;12,67;-;-;-;13,5;93,85185185
+25096;Lindemans Winemakers Release Shiraz Cabernet Sauvignon 13,5% 75cl;-;5,99;7,99;-;-;-;13,5;59,18518519
+25097;Castel Rose D Anjou 10,5% 75cl;-;6,99;9,32;-;-;-;10,5;88,76190476
+25100;Tosti Butterfly 9,5% 75cl;-;4,99;6,65;-;-;-;9,5;70
+25102;Espiritu de Chile Gran Reserva Carmenere 13,5% 75cl;-;6,99;9,32;-;-;-;13,5;69,03703704
+25105;Lenz Moser Prestige Riesling 12,5% 75cl;-;9,99;13,32;-;-;-;12,5;106,56
+25106;Lenz Moser Selection GrÃ¼ner Veltliner 12% 75cl;-;7,99;10,65;-;-;-;12;88,75
+25101;Espiritu de Chile Gran Reserva Cabernet Sauvignon 13,5% 75cl;-;6,99;9,32;-;-;-;13,5;69,03703704
+25112;Lenz Moser Selection Blauer Zweigelt 13% 75cl;-;8,5;11,33;-;-;-;13;87,15384615
+25113;Lenz Moser Prestige Beerenauslese 10% 37,5cl;-;9,99;26,64;-;-;-;10;266,4
+25119;Veranda Cabernet Sauvignon-Carmenere 14% 75cl;-;11,99;15,99;-;-;-;14;114,2142857
+25120;Veranda Syrah 14% 75cl;-;11,99;15,99;-;-;-;14;114,2142857
+25128;Kloster Eberbach Riesling Trocken 12% 75cl;-;12,99;17,32;-;-;-;12;144,3333333
+25127;Kloster Eberbach Riesling Feinherb 11,5% 75cl;-;12,99;17,32;-;-;-;11,5;150,6086957
+25134;Clan Murray 40% 50cl PET;-;13,99;27,98;-;-;-;40;69,95
+25140;Adobe Reserva Chardonnay Organic 13,5% 75cl;-;7,99;10,65;-;-;-;13,5;78,88888889
+25148;San Miguel 5% 24x33cl;-;19,99;2,52;-;-;-;5;50,4
+25149;Escudo Rojo Baron Philippe De  Rothschild Chardonnay 14% 75cl;-;12,99;17,32;-;-;-;14;123,7142857
+25147;DomÃ¤ne Wachau GrÃ¼ner Veltliner 13,5% 75cl;-;16,99;22,65;-;-;-;13,5;167,7777778
+25151;Nipernaadi Lime Wild Strawberry Flavoured Vodka 37,5% 50cl;-;8,99;17,98;-;-;-;37,5;47,94666667
+25158;Monte Cristo Mojito 15% 50cl PET;-;4,99;9,98;-;-;-;15;66,53333333
+25163;Larsen VSOP 40% 50cl PET;-;24,99;49,98;-;-;-;40;124,95
+25170;Marlborough Sauvignon Blanc 12% 75cl;-;10,99;14,65;-;-;-;12;122,0833333
+25172;Somersby Apple Cider 4,5% 24x33cl TIN;-;22,99;2,9;-;-;-;4,5;64,44444444
+25169;Cono Sur Bicicleta Pinot Noir 13% 75cl;-;5,99;7,99;-;-;-;13;61,46153846
+25179;Undurraga Terroir Hunter Sauvignon Blanc 13,5% 75cl;-;14,5;19,33;-;-;-;13,5;143,1851852
+25182;Undurraga Aliwen Reserva Sauvignon Blanc 13% 75cl;-;7,5;10;-;-;-;13;76,92307692
+25183;Undurraga Aliwen Reserva Pinot Noir 13,5% 75cl;-;7,5;10;-;-;-;13,5;74,07407407
+25181;Undurraga Terroir Hunter Syrah 14% 75cl;-;14,5;19,33;-;-;-;14;138,0714286
+25192;Finca Flichman Gestos Shiraz 14% 75cl;-;9,99;13,32;-;-;-;14;95,14285714
+25188;Sandels 4,7% 56,8cl;-;1,4;2,46;-;-;-;4,7;52,34042553
+25190;Undurraga Founders Collection Cabernet Sauvignon 14% 75cl;-;22,99;30,65;-;-;-;14;218,9285714
+25191;Finca Flichman Gestos Cabernet Sauvignon 14% 75cl;-;9,99;13,32;-;-;-;14;95,14285714
+25193;Finca Flichman Gestos Malbec 14% 75cl;-;9,99;13,32;-;-;-;14;95,14285714
+25197;Hardy XO 40% 100cl;-;47,5;47,5;-;-;-;40;118,75
+25195;Hardy VS 40% 100cl;-;33,5;33,5;-;-;-;40;83,75
+25196;Hardy VSOP 40% 100cl;-;38,5;38,5;-;-;-;40;96,25
+25199;Black Tower Rivaner 9,5% 300cl BIB;-;19,99;6,66;-;-;-;9,5;70,10526316
+25201;KÃ¶nigsmosel Riesling 8,5% 75cl;-;7,5;10;-;-;-;8,5;117,6470588
+25205;Stroh Jagertee 40% 100cl;-;22,99;22,99;-;-;-;40;57,475
+25207;Saku On Ice 5% 24x33cl;-;17,99;2,27;-;-;-;5;45,4
+25206;Stroh Jagertee 60% 50cl;-;17,99;35,98;-;-;-;60;59,96666667
+25210;Jacobs Creek Cool Harvest Sauvignon Blanc 10,8% 75cl;-;6,99;9,32;-;-;-;10,8;86,2962963
+25216;Luciente Semi Sweet Blanco 11% 75cl;-;3,99;5,32;-;-;-;11;48,36363636
+25209;Leffe Blonde 6,6% 33cl;-;2,3;6,97;-;-;-;6,6;105,6060606
+25218;Detunda Savignon Blanc 12,5% 300cl BIB;-;13,99;4,66;-;-;-;12,5;37,28
+25219;Detunda Cabernet Sauvignon Tempranillo 12,5% 300cl BIB;-;13,99;4,66;-;-;-;12,5;37,28
+25217;Luciente Semi Sweet Tinto 12,5% 75cl;-;3,99;5,32;-;-;-;12,5;42,56
+25223;Vergi Original Gin 37,5% 50cl PET;-;7,99;15,98;-;-;-;37,5;42,61333333
+25228;Landy VS 40% 50cl;-;19,99;39,98;-;-;-;40;99,95
+25226;Landy VSOP 40% 50cl;-;24,99;49,98;-;-;-;40;124,95
+25232;Chill Out South African Rose 12,5% 300cl BIB;-;16,99;5,66;-;-;-;12,5;45,28
+25245;Norton Barrel Select Sauvignon Blanc 13% 75cl;-;7,5;10;-;-;-;13;76,92307692
+25246;Val Doca Prosecco Extra Dry 11% 75cl;-;10,99;14,65;-;-;-;11;133,1818182
+25249;Landy XO Numero 1  40% 70cl;-;69,99;99,99;-;-;-;40;249,975
+25244;Heineken Lager 5% 24x33cl;-;17,99;2,27;-;-;-;5;45,4
+25263;The Claymore 40% 100cl;-;17,99;17,99;-;-;-;40;44,975
+25266;Barone Montalto Nero DAvola Merlot 13,5% 300cl BIB;-;17,99;6;-;-;-;13,5;44,44444444
+25269;Vernissage Syrah Cabernet Sauvignon 14% 300cl BIB;-;19,99;6,66;-;-;-;14;47,57142857
+25267;Mauro Primitivo del Salento 14% 300cl BIB;-;19,99;6,66;-;-;-;14;47,57142857
+25265;Barone Montalto Cataratto Viognier 12,5% 300cl BIB;-;17,99;6;-;-;-;12,5;48
+25274;Happy Cat Glossy Orange Mosel Riesling 10% 50cl;-;8,5;17;-;-;-;10;170
+25276;Happy Cat Silver Mosel Riesling 10% 50cl;-;8,5;17;-;-;-;10;170
+25275;Happy Cat Black Mosel Riesling 10% 50cl;-;8,5;17;-;-;-;10;170
+25279;Mulgi Viin 40% 50cl PET;-;7,99;15,98;-;-;-;40;39,95
+25280;Tuletorni Viin 40% 50cl PET;-;7,5;15;-;-;-;40;37,5
+25282;Mulgi Viin 40% 20cl PET;-;3,99;19,95;-;-;-;40;49,875
+25281;Tuletorni Viin 40% 20cl PET;-;3,99;19,95;-;-;-;40;49,875
+25290;J.P. Chenet Medium Sweet White 11% 300cl BIB;-;17,99;6;-;-;-;11;54,54545455
+25291;J.P. Chenet Medium Sweet Red 12,5% 300cl BIB;-;17,99;6;-;-;-;12,5;48
+25293;St. Remy Authentic XO 36% 50cl PET;-;15,99;31,98;-;-;-;36;88,83333333
+25307;Pierre Ferrand 1er Cru Cognac Esprit des Dieux 40% 70cl;-;67,5;96,43;-;-;-;40;241,075
+25308;Pierre Ferrand 1er Cru Cognac Selection des Anges 40% 70cl;-;86,99;124,27;-;-;-;40;310,675
+25312;Fuzion Alta Torrontes Pinot Grigio 12,5% 75cl;-;6,99;9,32;-;-;-;12,5;74,56
+25306;Pierre Ferrand 1er Cru Cognac Ambre 40% 70cl;-;36,99;52,84;-;-;-;40;132,1
+25304;Highland Queen 40% 100cl;-;22,99;22,99;-;-;-;40;57,475
+25305;Pierre Ferrand 1er Cru Cognac Reserve 40% 70cl;-;55,99;79,99;-;-;-;40;199,975
+25311;J.P. Chenet XO Brandy 36% 70cl;-;15,99;22,84;-;-;-;36;63,44444444
+25316;Fuzion Shiraz Cabernet 12% 75cl;-;5,99;7,99;-;-;-;12;66,58333333
+25314;Fuzion Alta Cabernet Sauvignon Reserva 13,5% 75cl;-;6,99;9,32;-;-;-;13,5;69,03703704
+25313;Fuzion Alta Malbec Reserve 13% 75cl;-;6,99;9,32;-;-;-;13;71,69230769
+25318;Fuzion Chenin Chardonnay 13% 75cl;-;5,99;7,99;-;-;-;13;61,46153846
+25319;Fuzion Chardonnay 13% 75cl;-;5,75;7,67;-;-;-;13;59
+25324;Jaume Serra CRISTALINO Cava Rose Brut 11,5% 75cl;-;6,5;8,67;-;-;-;11,5;75,39130435
+25327;Amaretto Demandis 20% 70cl;-;9,99;14,27;-;-;-;20;71,35
+25329;Moselland Goldschild Riesling Kabinett Trocken 11% 75cl;-;8,99;11,99;-;-;-;11;109
+25331;Moselland Goldschild Riesling Trocken Saar 12,5% 75cl;-;7,99;10,65;-;-;-;12,5;85,2
+25330;Moselland Goldschild Riesling Kabinett SÃ¼ss 9% 75cl;-;8,99;11,99;-;-;-;9;133,2222222
+25326;Santa Carolina Sauvignon Blanc 12,5% 75cl;-;4,99;6,65;-;-;-;12,5;53,2
+25338;Hardys BIN 545 Rose 11,5% 75cl;-;5,99;7,99;-;-;-;11,5;69,47826087
+25339;Kochi Raspberry Liqueur 21% 50cl PET;-;4,9;9,8;-;-;-;21;46,66666667
+25341;Kochi Wild Strawberry Liqueur 21% 50cl PET;-;5,5;11;-;-;-;21;52,38095238
+25340;Kochi Cranberry Liqueur 21% 50cl PET;-;4,9;9,8;-;-;-;21;46,66666667
+25348;Kochi Coffee Liqueur 21% 50cl PET;-;5,5;11;-;-;-;21;52,38095238
+25350;Torres Celeste Crianza 14% 75cl;-;11,99;15,99;-;-;-;14;114,2142857
+25349;Kochi Amaretto Liqueur 21% 50cl PET;-;5,5;11;-;-;-;21;52,38095238
+25352;Gabriel Meffre Laurus 14% 75cl;-;10,99;14,65;-;-;-;14;104,6428571
+25360;Henri Bourgeois Les Baronnes Sancerre 12,5% 75cl;-;25,99;34,65;-;-;-;12,5;277,2
+25362;Undurraga Aliwen Reserva Chardonnay 13,5% 75cl;-;7,5;10;-;-;-;13,5;74,07407407
+25364;Undurraga Terroir Hunter Riesling 12,5% 75cl;-;14,99;19,99;-;-;-;12,5;159,92
+25363;Undurraga Terroir Hunter Carignan 14,5% 75cl;-;14,5;19,33;-;-;-;14,5;133,3103448
+25374;Ron Zacapa XO 40% 70cl;-;113,5;162,14;-;-;-;40;405,35
+25375;Four Roses Bourbon 40% 100cl;-;27,99;27,99;-;-;-;40;69,975
+25376;Mount Gay Rum 1703 43% 70cl;-;91;130;-;-;-;43;302,3255814
+25377;Mount Gay Rum XO 43% 70cl;-;49,99;71,41;-;-;-;43;166,0697674
+25386;Vana Tallinn Glögi 12% 70cl;-;5,99;8,56;-;-;-;12;71,33333333
+25391;Canella Bellini Cocktail 6% 75cl;-;8,5;11,33;-;-;-;6;188,8333333
+25388;Torres Las Mulas Reserva Viognier Organic 13,5% 75cl;-;7,99;10,65;-;-;-;13,5;78,88888889
+25389;Tommasi Appassionato Adorato White 13% 75cl;-;9,99;13,32;-;-;-;13;102,4615385
+25390;Tommasi Appassionato Graticcio Red 13% 75cl;-;9,99;13,32;-;-;-;13;102,4615385
+25395;Santiago 1541 Syrah Cabernet Malbec 12,5% 75cl;-;5,99;7,99;-;-;-;12,5;63,92
+25400;Fläminger Jagd 30% 100cl;-;18,99;18,99;-;-;-;30;63,3
+25406;Trapiche Cabernet Sauvignon Syrah Organic 13% 75cl;-;7,99;10,65;-;-;-;13;81,92307692
+25404;Trapiche Viognier 13,5% 75cl;-;5,5;7,33;-;-;-;13,5;54,2962963
+25407;Boulard Calvados Grand Solage 40% 100cl;-;37,5;37,5;-;-;-;40;93,75
+25402;Ballet Carte Noire Brut 11,5% 75cl;-;4,99;6,65;-;-;-;11,5;57,82608696
+25403;Ballet Carte Noire Demi Sec 11,5% 75cl;-;4,99;6,65;-;-;-;11,5;57,82608696
+25412;Croizet VSOP 40% 70cl;-;34,99;49,99;-;-;-;40;124,975
+25405;Trapiche Pinot Grigio 12,5% 75cl;-;6,5;8,67;-;-;-;12,5;69,36
+25409;Marques de Riscal Vina Collada Rioja 14% 75cl;-;6,99;9,32;-;-;-;14;66,57142857
+25420;Chateau Saint-Leon Bordeaux Superieur 12,5% 75cl;-;12,99;17,32;-;-;-;12,5;138,56
+25422;Mernaya na Moloke 40% 100cl;-;18,5;18,5;-;-;-;40;46,25
+25425;Cameleon Chardonnay Organic 13% 75cl;-;7,99;10,65;-;-;-;13;81,92307692
+25426;Cameleon Cabernet Sauvignon Organic 13% 75cl;-;7,99;10,65;-;-;-;13;81,92307692
+25427;Bousquet Sauvignon Blanc 11,5% 75cl;-;7,99;10,65;-;-;-;11,5;92,60869565
+25428;Bousquet Torrontes Chardonnay 13% 75cl;-;7,99;10,65;-;-;-;13;81,92307692
+25430;Bousquet Cabernet Sauvignon 13% 75cl;-;7,99;10,65;-;-;-;13;81,92307692
+25432;Bousquet Reserve Malbec Organic 13,4% 75cl;-;10,99;14,65;-;-;-;13,4;109,3283582
+25433;Youngs Special London Ale 6,4% 50cl;-;2,8;5,6;-;-;-;6,4;87,5
+25431;Bousquet Reserve Chardonnay Pinot Gris 13,5% 75cl;-;10,99;14,65;-;-;-;13,5;108,5185185
+25434;Youngs Double Chocolate Stout 5,2% 50cl;-;2,9;5,8;-;-;-;5,2;111,5384615
+25437;Samuel Adams Boston Lager 4,7% 35,5cl;-;2,6;7,32;-;-;-;4,7;155,7446809
+25436;Peroni Nastro Azzurro 5,1% 33cl;-;1,8;5,45;-;-;-;5,1;106,8627451
+25452;Canadian Club 40% 100cl;-;27,5;27,5;-;-;-;40;68,75
+25445;A.Le Coq Mojito 4,7% 33cl;-;1,1;3,33;-;-;-;4,7;70,85106383
+25449;Paulaner Original Münchner Hell 4.9% 500cl;-;20,99;4,2;-;-;-;4.syys;85,71428571
+25451;Jalokahvi 28% 50cl PET;-;9,5;19;-;-;-;28;67,85714286
+25457;Armagnac Larressingle VSOP 40% 70cl;-;40,99;54,65;-;-;-;40;136,625
+25461;Glendronach 12YO 43% 70cl;-;43,99;62,84;-;-;-;43;146,1395349
+25462;Laphroaig Islay Single Malt Quarter Cask 48% 70cl;-;54,99;78,56;-;-;-;48;163,6666667
+25468;Chimay Red Premiere 7% 75cl;-;7,5;10;-;-;-;7;142,8571429
+25467;Chimay Blue Grande Reserve 9% 75cl;-;8,99;11,99;-;-;-;9;133,2222222
+25472;Lanson Black Label Brut Champagne 12,5% 75cl;-;35,99;47,99;-;-;-;12,5;383,92
+25470;Starõi Melnik Mjagkoje 4,3% 50cl;-;1,2;2,4;-;-;-;4,3;55,81395349
+25474;Tuborg Green 4,6% 33cl;-;1,1;3,33;-;-;-;4,6;72,39130435
+25473;Chimay Blue Grande Reserve 9% 300cl;-;54,99;18,33;-;-;-;9;203,6666667
+25476;Tuborg Lime Cut 4,5% 33cl;-;1,1;3,33;-;-;-;4,5;74
+25477;Kwak Beer 8,4% 75cl;-;6,99;9,32;-;-;-;8,4;110,952381
+25482;Belhaven St. Andrews Ale 4,6% 50cl;-;2,6;5,2;-;-;-;4,6;113,0434783
+25481;Hacker-Pschorr Münchner Kellebrier 5,5% 50cl;-;2,8;5,6;-;-;-;5,5;101,8181818
+25485;Birra Moretti 4,6% 33cl;-;1,5;4,55;-;-;-;4,6;98,91304348
+25484;Hacker-Pschorr Münchner Gold 5,5% 50cl;-;2,8;5,6;-;-;-;5,5;101,8181818
+25488;Shepherd Neame Spitfire Kentish Ale 4,5% 50cl;-;2,2;4,4;-;-;-;4,5;97,77777778
+25486;Paulaner Hefe-Weissbier Dunkel 5,3% 50cl;-;1,99;3,98;-;-;-;5,3;75,09433962
+25490;Beefeater 40% 5cl MINI;-;2,5;50;-;-;-;40;125
+25491;Jameson 40% 5cl MINI;-;2,5;50;-;-;-;40;125
+25492;MINI Ballantines Finest 40% 5cl;-;2,5;50;-;-;-;40;125
+25489;Tripel Karmeliet 8,4% 33cl;-;2,99;9,06;-;-;-;8,4;107,8571429
+25494;Shepherd Neame Bishops Finger 5,4% 50cl;-;2,8;5,6;-;-;-;5,4;103,7037037
+25496;Beringer Founders Estate Chardonnay 13,5% 75cl;-;10,99;14,65;-;-;-;13,5;108,5185185
+25498;Beringer Knights Valley Cabernet Sauvignon 14,5% 75cl;-;29,99;39,99;-;-;-;14,5;275,7931034
+25499;RomanZero Limoncello 25% 50cl;-;9,99;19,98;-;-;-;25;79,92
+25511;Torres Gran Sangre de Toro Reserva 14% 75cl;-;9,99;13,32;-;-;-;14;95,14285714
+25510;Hankey Bannister Original Scotch Whisky 40% 100cl;-;21,99;21,99;-;-;-;40;54,975
+25516;Tuletorni Viin 40% 50cl;-;7,99;15,98;-;-;-;40;39,95
+25514;Mulgi Viin 40% 100cl;-;15,5;15,5;-;-;-;40;38,75
+25515;Mulgi Viin 40% 50cl;-;7,99;15,98;-;-;-;40;39,95
+25518;Kochi Raspberry Liqueur 21% 50cl;-;4,99;9,98;-;-;-;21;47,52380952
+25519;Kochi Coffee Liqueur 21% 50cl;-;4,99;9,98;-;-;-;21;47,52380952
+25517;Taxi Vodka 40% 50cl;-;8,5;17;-;-;-;40;42,5
+25521;Aida Palsam 45% 50cl PET;-;8,99;17,98;-;-;-;45;39,95555556
+25522;Kochi Wild Strawberry Liqueur 21% 50cl;-;4,99;9,98;-;-;-;21;47,52380952
+25523;Kochi Amaretto Liqueur 21% 50cl;-;4,99;9,98;-;-;-;21;47,52380952
+25525;Faustino I Gran Reserva Rioja 13,5% 75cl;-;21,99;29,32;-;-;-;13,5;217,1851852
+25524;Kochi Cranberry Liqueur 21% 50cl;-;3,99;7,98;-;-;-;21;38
+25526;Faustino V Reserva Rioja 13,5% 75cl;-;14,99;19,99;-;-;-;13,5;148,0740741
+25529;Castillo San Simon Crianza 13% 75cl;-;4,99;6,65;-;-;-;13;51,15384615
+25536;Finca Flichman Caballero De La Cepa Malbec 13,5% 75cl;-;7,99;10,65;-;-;-;13,5;78,88888889
+25538;Absolut Elyx 42,3% 70cl;-;36,99;52,84;-;-;-;42,3;124,9172577
+25552;Tajapiera Amarone della Valpolicella  14,5% 75cl;-;24,99;33,32;-;-;-;14,5;229,7931034
+25545;Jaume Serra Cava Reserva Brut Nature 11,5% 75cl;-;6,5;8,67;-;-;-;11,5;75,39130435
+25555;MINI Freixenet Cava Carta Nevada Semi Seco 11,5% 20cl;-;3,5;17,5;-;-;-;11,5;152,173913
+25556;MINI Freixenet Cava Cordon Negro Brut 11,5% 20cl;-;3,5;17,5;-;-;-;11,5;152,173913
+25557;MINI Freixenet Cava Cordon Rosado Seco 12% 20cl;-;3,5;17,5;-;-;-;12;145,8333333
+25558;Le Grand Noir Cabernet Syrah 13,5% 75cl;-;7,99;10,65;-;-;-;13,5;78,88888889
+25559;Le Grand Noir Chardonnay Viognier 13,5% 75cl;-;7,99;10,65;-;-;-;13,5;78,88888889
+25560;Le Grand Noir GSM - Grenache Shiraz Mourvedre 13% 75cl;-;7,5;10;-;-;-;13;76,92307692
+25563;Luigi Righetti Amarone della Valpolicella 15% 75cl;-;16,5;22;-;-;-;15;146,6666667
+25565;PietraPura Mandus 14% 75cl;-;11,99;15,99;-;-;-;14;114,2142857
+25567;Canti Barbera d Asti DOCG 13,5% 75cl;-;7,99;10,65;-;-;-;13,5;78,88888889
+25575;Enrico Serafino Barbera d Asti DOCG 13% 75cl;-;12,99;17,32;-;-;-;13;133,2307692
+25564;Villa Vescovile Pinot Grigio 12,5% 75cl;-;10,5;14;-;-;-;12,5;112
+25561;Chateau Des Landes Lussac Saint-Emilion 13,5% 75cl;-;11,9;15,87;-;-;-;13,5;117,5555556
+25576;M. Chapoutier Belleruche Cotes-du-Rhone 14% 75cl;-;10,99;14,65;-;-;-;14;104,6428571
+25568;Canti Pinot Brut 11% 75cl;-;6,99;9,32;-;-;-;11;84,72727273
+25578;Vionta Albarino 12,5% 75cl;-;11,99;15,99;-;-;-;12,5;127,92
+25577;Mas de Subira 14,5% 75cl;-;12,99;17,32;-;-;-;14,5;119,4482759
+25579;Royal Oporto Rose 19% 75cl;-;14,99;19,99;-;-;-;19;105,2105263
+25581;Pfaff Goldert Grand Cru Riesling 12,5% 75cl;-;15,99;21,32;-;-;-;12,5;170,56
+25584;Dalva Porto Tawny 19% 75cl;-;11,99;15,99;-;-;-;19;84,15789474
+25585;Masseria Dei Carmelitani Gavi Di Gavi 12,5% 75cl;-;11,99;15,99;-;-;-;12,5;127,92
+25586;Chateau Beaulieu 13% 75cl;-;13,99;18,65;-;-;-;13;143,4615385
+25598;Terre Molin Valpolicella  Classico Superiore 12,5% 75cl;-;10,99;14,65;-;-;-;12,5;117,2
+25596;Marquis De Greyssac 12,5% 75cl;-;11,99;15,99;-;-;-;12,5;127,92
+25601;Gabriel Meffre Alais Cotes de Provence 13% 75cl;-;8,99;11,99;-;-;-;13;92,23076923
+25602;Blandys Madeira Duke Of Clarence 19% 75cl;-;16,5;22;-;-;-;19;115,7894737
+25603;Warres Late Bottled Vintage 20% 75cl;-;26,99;35,99;-;-;-;20;179,95
+25605;Pascal Bouchard Chablis 12,5% 75cl;-;18,5;24,67;-;-;-;12,5;197,36
+25606;Matayac Cahors 12,5% 75cl;-;7,99;10,65;-;-;-;12,5;85,2
+25612;Chateau Moulin de Bel-Air 14% 75cl;-;13,5;18;-;-;-;14;128,5714286
+25607;Campo Lindo Gran Seleccion 13,5% 75cl;-;7,5;10;-;-;-;13,5;74,07407407
+25608;Chateau Haut-Baillan 12% 75cl;-;11,99;15,99;-;-;-;12;133,25
+25615;Chateau du Cartillon Haut-Medoc 13% 75cl;-;15,99;21,32;-;-;-;13;164
+25617;Banfi San Angelos Pinot Grigio 13,5% 75cl;-;15,99;21,32;-;-;-;13,5;157,9259259
+25619;Torres Altos Ibericos Crianza Rioja 13,5% 75cl;-;9,99;13,32;-;-;-;13,5;98,66666667
+25618;Rothschild Mouton Cadet Reserve Saint-Emilion 13,5% 75cl;-;18,99;25,32;-;-;-;13,5;187,5555556
+25620;Torres Floralis Moscatel Oro 15% 50cl;-;10,99;21,98;-;-;-;15;146,5333333
+25627;Lan Rioja Gran Reserva 13,5% 75cl;-;18,5;24,67;-;-;-;13,5;182,7407407
+25625;Joseph Drouhin Laforet Chardonnay 13% 75cl;-;16,99;22,65;-;-;-;13;174,2307692
+25624;E.Guigal Crozes-Hermitage 13% 75cl;-;22,99;30,65;-;-;-;13;235,7692308
+25629;Lan Rioja Crianza 13,5% 75cl;-;10,5;14;-;-;-;13,5;103,7037037
+25628;Lan A Mano Rioja 14% 75cl;-;41,99;55,99;-;-;-;14;399,9285714
+25630;Lan Rioja Reserva 13,5% 75cl;-;13,99;18,65;-;-;-;13,5;138,1481481
+25631;Masi Brolo Campofiorin 14% 75cl;-;16,5;22;-;-;-;14;157,1428571
+25638;Les Hauts des Coteaux Chateauneuf du Pape 15% 75cl;-;33,99;45,32;-;-;-;15;302,1333333
+25640;GPG Garganega Pinot Grigio 12% 75cl;-;7,99;10,65;-;-;-;12;88,75
+25645;Old Pulteney 12YO Single Malt 40% 70cl;-;39,99;57,13;-;-;-;40;142,825
+25642;Chateau St-Pierre Pomerol 13% 75cl;-;33,99;45,32;-;-;-;13;348,6153846
+25644;Chateau Pontet-Fumet Saint-Emilion Grand Cru 13% 75cl;-;22,99;30,65;-;-;-;13;235,7692308
+25647;The Singleton Single Malt Scotch Whisky 40% 70cl;-;34,99;49,99;-;-;-;40;124,975
+25651;Coto De Imaz Gran Reserva Rioja 14% 75cl;-;19,99;26,65;-;-;-;14;190,3571429
+25646;Napoleon Dubaron XO 36% 50cl PET;-;9,99;19,98;-;-;-;36;55,5
+25656;Lamberti Pinot Grigio 12% 75cl;-;7,99;10,65;-;-;-;12;88,75
+25657;Protos Crianza 15% 75cl;-;19,99;26,65;-;-;-;15;177,6666667
+25658;Protos Reserva 14% 75cl;-;31,99;42,65;-;-;-;14;304,6428571
+25659;Protos Verdejo 13% 75cl;-;12,99;17,32;-;-;-;13;133,2307692
+25661;Paulaner Salvator 7,9% 33cl;-;1,99;6,03;-;-;-;7,9;76,32911392
+25664;Kopke Porto 10YO 20% 75cl;-;20,99;27,99;-;-;-;20;139,95
+25669;Borges Madeira 5YO Reserve Medium Sweet 18,5% 75cl;-;16,99;22,65;-;-;-;18,5;122,4324324
+25672;Principe de Viana Crianza 13,5% 75cl;-;7,99;10,65;-;-;-;13,5;78,88888889
+25670;Kopke Fine White Porto 19,5% 75cl;-;10,99;14,65;-;-;-;19,5;75,12820513
+25667;Kopke Fine Tawny Porto 19,5% 75cl;-;10,99;14,65;-;-;-;19,5;75,12820513
+25671;Kopke Fine Ruby Porto 19,5% 75cl;-;10,99;14,65;-;-;-;19,5;75,12820513
+25678;Hot n Sweet Tyrkisk Peber 32% 100cl;-;25,99;25,99;-;-;-;32;81,21875
+25679;Hot n Sweet Soft Licorice 16% 50cl PET;-;9,99;19,98;-;-;-;16;124,875
+25684;Medoff Classic Vodka 40% 100cl;-;17,99;17,99;-;-;-;40;44,975
+25690;Moe Viin 1886 40% 70cl;-;15,99;22,84;-;-;-;40;57,1
+25691;Moe Mahe Viin 1886 40% 70cl;-;15,99;22,84;-;-;-;40;57,1
+25701;Australian Bush Shiraz Cabernet 13% 300cl BIB;-;15,99;5,33;-;-;-;13;41
+25702;Australian Bush Chardonnay Colombard 13% 300cl BIB;-;15,99;5,33;-;-;-;13;41
+25704;Havana Club 3YO 40% 100cl;-;24,99;24,99;-;-;-;40;62,475
+25705;Tommasi Appassionato Graticcio Red 13% 300cl BIB;-;22,99;7,66;-;-;-;13;58,92307692
+25710;Warsteiner Premium 4,8% 50cl TIN;-;1,65;3,3;-;-;-;4,8;68,75
+25711;One Reserva Ribera del Duero 14% 75cl;-;9,99;13,32;-;-;-;14;95,14285714
+25709;Schöfferhofer Hefeweizen 5% 50cl;-;1,69;3,38;-;-;-;5;67,6
+25712;Guinness Original 5% 33cl;-;1,3;3,94;-;-;-;5;78,8
+25719;El Dorado 12YO 40% 70cl;-;40,99;58,56;-;-;-;40;146,4
+25716;Cortel Napoleon 40% 70cl;-;17,99;25,7;-;-;-;40;64,25
+25713;Jaloviina *** 40% 50cl PET;-;14,5;29;-;-;-;40;72,5
+25717;Vina Albali Verdejo Organic Wine 12,5% 300cl BIB;-;16,99;5,66;-;-;-;12,5;45,28
+25718;Tobacco Spiced 37,5% 100cl;-;16,99;16,99;-;-;-;37,5;45,30666667
+25727;Ballantines 30YO Blended Scotch Whisky 43% 70cl;-;245;350;-;-;-;43;813,9534884
+25728;Royal Salute 21YO Blended Scotch Whisky 40% 70cl;-;175;250;-;-;-;40;625
+25729;Sladkoje Igristoje Magnum 10% 150cl;-;6,99;4,66;-;-;-;10;46,6
+25726;Strathisla 12YO Speyside Single Malt Scotch Whisky 40% 70cl;-;45;64,29;-;-;-;40;160,725
+25732;Kochi Pineapple Liqueur 21% 50cl PET;-;4,9;9,8;-;-;-;21;46,66666667
+25731;Kase Viin 40% 70cl;-;24,99;35,7;-;-;-;40;89,25
+25723;Crystal Vodka 40% 300cl BIB;-;49,5;16,5;-;-;-;40;41,25
+25733;Kochi Chocolate Liqueur 21% 50cl PET;-;5,5;11;-;-;-;21;52,38095238
+25735;Aida Palsam 45% 50cl;-;9,99;19,98;-;-;-;45;44,4
+25737;Kochi Cherry Liqueur 21% 50cl;-;4,99;9,98;-;-;-;21;47,52380952
+25734;Kochi Cherry Liqueur 21% 50cl PET;-;4,9;9,8;-;-;-;21;46,66666667
+25736;Kochi Pineapple Liqueur 21% 50cl;-;4,99;9,98;-;-;-;21;47,52380952
+25739;Beluga Vodka 40% 100cl;-;43,99;43,99;-;-;-;40;109,975
+25741;Laphroaig Islay Single Malt 10YO 40% 70cl;-;41,99;59,99;-;-;-;40;149,975
+25753;Kochi Green Apple Liqueur 21% 50cl PET;-;5,5;11;-;-;-;21;52,38095238
+25754;Casal Garcia Douro Red Wine 13% 75cl;-;7,99;10,65;-;-;-;13;81,92307692
+25752;Kochi Blackcurrant Liqueur 21% 50cl PET;-;4,9;9,8;-;-;-;21;46,66666667
+25758;Santiago de Chile Cabernet  Sauvignon 13% 300cl BIB;-;15,5;5,17;-;-;-;13;39,76923077
+25759;Santiago de Chile Semillon Chardonnay 12,5% 300cl BIB;-;15,5;5,17;-;-;-;12,5;41,36
+25765;Somersby Pear Cider 4,5% 24x33cl TIN;-;22,99;2,9;-;-;-;4,5;64,44444444
+25768;Monte Cristo Sparkling Rose Sweet 10% 75cl;-;3,99;5,32;-;-;-;10;53,2
+25772;Pata Negra Tempranillo 13% 300cl BIB;-;17,99;6;-;-;-;13;46,15384615
+25776;Marlborough Pinot Noir 13,5% 75cl;-;14,99;19,99;-;-;-;13,5;148,0740741
+25777;Barista Pinotage 14% 75cl;-;9,99;13,32;-;-;-;14;95,14285714
+25769;Aecht Schlenkerla Rauchbier 5,1% 50cl;-;2,99;5,98;-;-;-;5,1;117,254902
+25775;Johnnie Walker Double Black 40% 70cl;-;42,99;61,41;-;-;-;40;153,525
+25773;De Bortoli GewÃ¼rztraminer Riesling 12,5% 75cl;-;6,99;9,32;-;-;-;12,5;74,56
+25778;MINI Zonin Prosecco Cuvee 1821 11% 20cl;-;3,5;17,5;-;-;-;11;159,0909091
+25779;Arsenitch Premium Vodka 40% 100cl;-;19,99;19,99;-;-;-;40;49,975
+25781;Laroche L Chardonnay 12% 300cl BIB;-;23,99;8;-;-;-;12;66,66666667
+25782;Meukow Xpresso 20% 50cl;-;17,99;35,98;-;-;-;20;179,9
+25784;Saaremaa Schnapps 30% 50cl PET;-;7,99;15,98;-;-;-;30;53,26666667
+25786;Don Simon Merlot 12% 100cl TETRA;-;4,99;4,99;-;-;-;12;41,58333333
+25785;Don Luciano Pink Moscato 7% 75cl;-;4,5;6;-;-;-;7;85,71428571
+25788;Don Simon Chardonnay Airen 11% 100cl TETRA;-;4,99;4,99;-;-;-;11;45,36363636
+25787;Don Simon Cabernet Sauvignon 12% 100cl TETRA;-;4,99;4,99;-;-;-;12;41,58333333
+25793;Deus Brut Beer 11,5% 75cl;-;18,99;25,32;-;-;-;11,5;220,173913
+25798;Bernard Dark Lager 5,1% 50cl;-;2,5;5;-;-;-;5,1;98,03921569
+25791;Henry Westons Medium Dry 6,5% 50cl;-;3,1;6,2;-;-;-;6,5;95,38461538
+25792;Henry Westons Medium Sweet 4,5% 50cl;-;2,99;5,98;-;-;-;4,5;132,8888889
+25796;Casetta Barolo DOCG 14% 75cl;-;22,5;30;-;-;-;14;214,2857143
+25800;San Simone Prosecco Millesimato 11,5% 75cl;-;8,5;11,33;-;-;-;11,5;98,52173913
+25809;Paulaner Original Münchner Hell Munich Lager 4,9% 50cl TIN;-;1,99;3,98;-;-;-;4,9;81,2244898
+25802;MINI Bernard-Massard Cuvee Brut 12% 20cl;-;3,99;19,95;-;-;-;12;166,25
+25812;Zenato Veneto Rosso Parziale Appassimento 13,5% 75cl;-;8,5;11,33;-;-;-;13,5;83,92592593
+25805;Gustave Lorentz Fleurelle 12,5% 75cl;-;11,99;15,99;-;-;-;12,5;127,92
+25811;Zenato Amarone della Valpolicella DOC 16,5% 75cl;-;33,99;45,32;-;-;-;16,5;274,6666667
+25817;Vergi Original Gin 37,5% 100cl;-;14,99;14,99;-;-;-;37,5;39,97333333
+25815;Kochi Apteekri Snaps 35% 50cl;-;7,5;15;-;-;-;35;42,85714286
+25816;Kochi Apteekri Snaps 35% 50cl PET;-;7,99;15,98;-;-;-;35;45,65714286
+25814;Kochi Apteekri Snaps 35% 70cl;-;9,99;14,27;-;-;-;35;40,77142857
+25818;Vergi Original Gin 37,5% 70cl;-;12,5;17,86;-;-;-;37,5;47,62666667
+25819;Vergi White Caribbean Rum 37,5% 50cl PET;-;8,5;17;-;-;-;37,5;45,33333333
+25820;Vergi Dark Caribbean Rum 37,5% 50cl PET;-;7,99;15,98;-;-;-;37,5;42,61333333
+25826;Undurraga Demi-Sec 12% 75cl;-;6,99;9,32;-;-;-;12;77,66666667
+25823;Senorio  de los Llanos Blanco 11% 75cl;-;3,99;5,32;-;-;-;11;48,36363636
+25827;Terra Serena Prosecco Treviso 10,5% 75cl;-;7,99;10,65;-;-;-;10,5;101,4285714
+25824;Senorio  de los Llanos Rosado 11,5% 75cl;-;3,99;5,32;-;-;-;11,5;46,26086957
+25830;Hoegaarden Wheat Beer 4,9% 33cl;-;1,99;6,03;-;-;-;4,9;123,0612245
+25831;Estrella Damm Inedit 4,8% 75cl;-;3,99;5,32;-;-;-;4,8;110,8333333
+25834;Doppio Passo Primitivo 13% 300cl BIB;-;20,99;7;-;-;-;13;53,84615385
+25833;Alexander Export 5.2% 24X33cl;-;17,5;2,21;-;-;-;5.helmi;42,5
+25832;Jaloviina 38% 8x50cl PET;-;95,99;24;-;-;-;38;63,15789474
+25845;Leth Duett Riesling Veltliner Klassik 12,5% 75cl;-;7,99;10,65;-;-;-;12,5;85,2
+25843;Leth GrÃ¼ner Veltliner Klassik 12,5% 75cl;-;7,99;10,65;-;-;-;12,5;85,2
+25856;Luciente Semi Sweet Rose 12% 75cl;-;3,99;5,32;-;-;-;12;44,33333333
+25857;Vana Tallinn 40% 50cl Gift Box;-;22,5;45;-;-;-;40;112,5
+25861;Cono Sur Bicicleta Riesling 11,5% 75cl;-;5,5;7,33;-;-;-;11,5;63,73913043
+25866;Jim Beam Bourbon White Label 40% 50cl PET;-;13,5;27;-;-;-;40;67,5
+25864;Old Captain Dark Caribbean Rum 37,5% 100cl;-;18,99;18,99;-;-;-;37,5;50,64
+25862;Amaro Averna 29% 100cl;-;26,5;26,5;-;-;-;29;91,37931034
+25865;Old Captain White Caribbean Rum 37,5% 100cl;-;18,99;18,99;-;-;-;37,5;50,64
+25867;Minttu Choco Mint 35% 50cl;-;10,99;21,98;-;-;-;35;62,8
+25870;Teachers Highland Cream 40% 50cl PET;-;12,5;25;-;-;-;40;62,5
+25872;Teichenne Ship Brandy 38% 70cl ;-;36,5;52,14;-;-;-;38;137,2105263
+25875;Kochi Palsam 45% 50cl PET;-;10,5;21;-;-;-;45;46,66666667
+25876;Kochi Palsam 45% 50cl;-;10,5;21;-;-;-;45;46,66666667
+25879;Koch Vol 38 Vodka Lime 38% 50cl;-;7,99;15,98;-;-;-;38;42,05263158
+25884;Dr.H.Thanisch Riesling 10% 75cl;-;9,99;13,32;-;-;-;10;133,2
+25882;Koch Vol 38 Vodka 38% 50cl;-;7,99;15,98;-;-;-;38;42,05263158
+25880;Koch Vol 38 Vodka Cranberry 38% 50cl;-;7,99;15,98;-;-;-;38;42,05263158
+25883;Koch Vol 38 Vodka Cherry 38% 50cl;-;7,99;15,98;-;-;-;38;42,05263158
+25881;Koch Vol 38 Vodka Blackcurrant 38% 50cl;-;7,99;15,98;-;-;-;38;42,05263158
+25890;Millaman Condor Carmenere 12,5% 75cl;-;5,5;7,33;-;-;-;12,5;58,64
+25892;Millaman Estate Reserve Sauvignon Blanc 13% 75cl;-;6,99;9,32;-;-;-;13;71,69230769
+25891;Millaman Condor Chardonnay 12,5% 75cl;-;5,5;7,33;-;-;-;12,5;58,64
+25893;Shepherd Neame Double Stout 5,2% 50cl;-;2,6;5,2;-;-;-;5,2;100
+25894;Shepherd Neame India Pale Ale 6,1% 50cl;-;2,99;5,98;-;-;-;6,1;98,03278689
+25899;Andrea da Ponte Vecchia Grappa 42% 70cl;-;37,99;54,27;-;-;-;42;129,2142857
+25903;Ecusson Cidre Brut 5% 33cl;-;2,1;6,36;-;-;-;5;127,2
+25905;Rigol Cava Brut 11,5% 75cl;-;5,99;7,99;-;-;-;11,5;69,47826087
+25902;Ecusson Cidre Doux 2,5% 33cl;-;2,1;6,36;-;-;-;2,5;254,4
+25904;Rigol Cava Semi Seco 11,5% 75cl;-;5,99;7,99;-;-;-;11,5;69,47826087
+25906;Piqueras Syrah Monastrell Black Label 14% 75cl;-;5,5;7,33;-;-;-;14;52,35714286
+25909;Somersby Blackberry 4,5% 24x33cl TIN;-;22,99;2,9;-;-;-;4,5;64,44444444
+25910;Geyser Peak Merlot 13,5% 75cl;-;9,25;12,33;-;-;-;13,5;91,33333333
+25913;Koch Vol 38 Vodka Vanilla 38% 50cl;-;7,99;15,98;-;-;-;38;42,05263158
+25908;Tommasi Appassionato Adorato White 12,5% 300cl BIB;-;22,99;7,66;-;-;-;12,5;61,28
+25921;Torres 10YO Brandy 38% 50cl PET;-;9,99;19,98;-;-;-;38;52,57894737
+25926;Captain Morgan Black Spiced 40% 70cl;-;17,99;25,7;-;-;-;40;64,25
+25925;G.H.Mumm Rose Brut Champagne 12% 75cl;-;34,99;46,65;-;-;-;12;388,75
+25924;Heering Cherry Liqueur 24% 100cl;-;19,99;19,99;-;-;-;24;83,29166667
+25927;Ardbeg Uigeadail 54,2% 70cl;-;80,99;115,7;-;-;-;54,2;213,4686347
+25923;Koskenkorva Valhalla 35% 50cl;-;11,99;23,98;-;-;-;35;68,51428571
+25933;Chimay Gold Blond 4,8% 33cl;-;2,9;8,79;-;-;-;4,8;183,125
+25936;Ron Santiago de Cuba Carta Blanca 38% 100cl;-;22,5;22,5;-;-;-;38;59,21052632
+25932;Cuerpo Mojito 15% 300cl BIB;-;25,99;0;-;-;-;15;0
+25935;Ron Santiago de Cuba Anejo 38% 100cl;-;29,99;29,99;-;-;-;38;78,92105263
+25937;Metaxa 7* 40% 50cl PET;-;18,99;37,98;-;-;-;40;94,95
+25939;Vana Tallinn Signature 40% 50cl;-;31,99;63,98;-;-;-;40;159,95
+25940;Peter & Peter Riesling Trocken 12% 75cl;-;6,99;9,32;-;-;-;12;77,66666667
+25952;Santa Christina Sauvignon Blanc 13% 75cl;-;5,5;7,33;-;-;-;13;56,38461538
+25951;Nederburg Manor House Sauvignon Blanc 13,5% 75cl;-;10,5;14;-;-;-;13,5;103,7037037
+25950;Nederburg Winemasters Reserve Pinotage 14,5% 75cl;-;8,99;11,99;-;-;-;14,5;82,68965517
+25953;Santa Christina Merlot 13% 75cl;-;5,5;7,33;-;-;-;13;56,38461538
+25956;Koninklijke Liqueur a La Creme 17% 70cl;-;8,99;12,84;-;-;-;17;75,52941176
+25957;Reval London Dry Gin 47% 70cl;-;20,99;29,99;-;-;-;47;63,80851064
+25964;Taylors Select Reserve Port 20% 75cl;-;15,99;21,32;-;-;-;20;106,6
+25965;Frapin Chateau Fontpinot Grande Champagne XO 41% 70cl;-;89;127,14;-;-;-;41;310,097561
+25967;Sopra Sasso Appassite Rosso 13,5% 75cl;-;7,5;10;-;-;-;13,5;74,07407407
+25969;Koyle Royale Cabernet Sauvignon 14,5% 75cl;-;15,99;21,32;-;-;-;14,5;147,0344828
+25966;Sopra Sasso Valpolicella Ripasso DOC 13,5% 75cl;-;10,99;14,65;-;-;-;13,5;108,5185185
+25972;Panamera Chardonnay 13% 75cl;-;13,5;18;-;-;-;13;138,4615385
+25970;Koyle Costa Sauvignon Blanc 13% 75cl;-;12,99;17,32;-;-;-;13;133,2307692
+25974;Lyngrove Platinum Pinotage 14,5% 75cl;-;18,5;24,67;-;-;-;14,5;170,137931
+25973;Gustave Lorentz Riesling 12,5% 75cl;-;18,99;25,32;-;-;-;12,5;202,56
+25985;Cono Sur Sauvignon Blanc Organic 12% 75cl;-;8,99;11,99;-;-;-;12;99,91666667
+25996;Santiago 1541 Sauvignon Blanc 12,5% 75cl;-;5,99;7,99;-;-;-;12,5;63,92
+25998;Saku Kuld 5,2% 24x33cl;-;17,99;2,27;-;-;-;5,2;43,65384615
+25999;Yali Sauvignon Blanc 12% 75cl;-;4,99;6,65;-;-;-;12;55,41666667
