@@ -24,6 +24,7 @@ export class AlkolistComponent implements OnInit {
     {name: 'Liköörit ja Katkerot', cat: ['Liköörit ja Katkerot']},
     {name: 'vodkat ja viinat', cat: ['vodkat ja viinat']},
     {name: 'Lasinpesunesteet', cat: ['lasinpesuneste']},
+    {name: 'Kaikki', cat: ['kaikki_enabled_special']},
   ];
 
   @ViewChild('myModal') myModal;
@@ -54,31 +55,25 @@ export class AlkolistComponent implements OnInit {
   }
 
   public categoryButtonClicked(categories: any) {
-    categories.forEach((category) => {
-      this.flipCategory(category);
-    });
-
+    if(categories[0] === 'kaikki_enabled_special'){
+      console.log("test")
+      this.resetCategories();
+    }else{
+      this.alkoService.enabledCategories = categories;
+    }
+    
     this.alkoService.generatePageData();
   }
 
   public resetCategories() {
-    this.alkoService.enabledCategories = [
-      'punaviinit',
-      'roseeviinit',
-      'valkoviinit',
-      'rommit',
-      'konjakit',
-      'viskit',
-      'oluet',
-      'siiderit',
-      'juomasekoitukset',
-      'kuohuviinit & samppanjat',
-      'Jälkiruokaviinit, väkevöidyt ja muut viinit',
-      'Brandyt, Armanjakit ja Calvadosit',
-      'Ginit ja maustetut viinat',
-      'Liköörit ja Katkerot',
-      'vodkat ja viinat'
-    ];
+    console.log("test");
+    this.alkoService.enabledCategories = []
+    this.categories.forEach((category) => {
+      category.cat.forEach(cat => {
+        this.alkoService.enabledCategories.push(cat);
+      });
+    })
+    console.log(this.alkoService.enabledCategories);
   }
 
   private flipCategory(category) {
