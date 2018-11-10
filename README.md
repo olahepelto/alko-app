@@ -17,5 +17,5 @@ This Alko data viewer was created as a weekend project just for fun. This projec
 #### Main View
 ![alt text](https://raw.githubusercontent.com/olahepelto/alko-app/master/images/Screenshot2.png "Screenshot 1")
 
-#### Beta Mode
+#### Beta Mode (Similar to mobile)
 ![alt text](https://raw.githubusercontent.com/olahepelto/alko-app/master/images/Screenshot4.png "Screenshot 3")
