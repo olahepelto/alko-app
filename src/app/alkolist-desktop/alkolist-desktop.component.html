@@ -20,7 +20,7 @@
       </div>
       <div class="col-3" style="text-align: left;">
         <img *ngIf='!alkoService.superAlkoEnabled' [ngClass]="{'image-big' : productHover[i], 'image-hidden' : !productHover[i]}" src="{{'https://images.alko.fi/images/cs_srgb,f_auto,t_products/cdn/' + alcoholProduct.Numero + '/a.jpg'}}">
-        <a style="color: #212529; text-decoration:none;" (mouseenter)="productHover[i] = true" (mouseleave)="productHover[i] = false" href="{{(alkoService.superAlkoEnabled ? 'https://m.viinarannasta.ee/tuoteryhmat/3/5/' : 'https://www.alko.fi/tuotteet/') + alcoholProduct.Numero}}">
+        <a style="color: #212529; text-decoration:none;" (mouseenter)="productHover[i] = true" (mouseleave)="productHover[i] = false" href="{{(alkoService.superAlkoEnabled ? 'https://m.viinarannasta.ee/tuoteryhmat/3/5/' : 'https://www.alko.fi/tuotteet/') + alcoholProduct.Numero}}" target="_blank">
           {{alcoholProduct.Nimi}}
         </a>
       </div>

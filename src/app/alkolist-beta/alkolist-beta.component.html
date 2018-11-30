@@ -5,7 +5,7 @@
     <ng-container style="display: flex;" *ngIf="alkoService.enabledCategories.indexOf(alcoholProduct.Tyyppi) !== -1 && alcoholProduct.EurPerLAlkohol > 28 || alcoholProduct.Tyyppi === '-'">
       <h5 style="width: 100%; margin-top: 7px;">
         <span style="color: gray;">{{alkoService.superAlkoEnabled ? '' : alcoholProduct.Pullokoko + 'L'}} </span>
-        <a style="color: black; text-decoration:none;" href="{{'https://www.alko.fi/tuotteet/' + alcoholProduct.Numero}}">{{alcoholProduct.Nimi}}</a>
+        <a style="color: black; text-decoration:none;" href="{{'https://www.alko.fi/tuotteet/' + alcoholProduct.Numero}}" target="_blank">{{alcoholProduct.Nimi}}</a>
         <span style="color: green;" *ngIf="alkoService.availabilityObj[alcoholProduct.Numero] && !alkoService.superAlkoEnabled"> S</span>
         <span style="color: red;" *ngIf="!alkoService.availabilityObj[alcoholProduct.Numero] && !alkoService.superAlkoEnabled"> E</span>
       </h5>
