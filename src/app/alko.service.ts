@@ -39,6 +39,8 @@ export class AlkoService {
 
   public lastFileUpdate = 'ei koskaan';
 
+  public loadingSpinnerEnabled = true;
+
   public enabledCategories = [
     'punaviinit',
     'roseeviinit',
@@ -97,8 +99,9 @@ export class AlkoService {
     // Return everything after the equal sign, or an empty string if the cookie name not found
     return decodeURIComponent(!!cookiestring ? cookiestring.toString().replace(/^[^=]+./, '') : '');
   }
-
   generateAlkoData() {
+    this.loadingSpinnerEnabled = true;
+
     fetch('./assets/availability.csv')
     .then(function(response) {
       return response.text();
@@ -143,6 +146,7 @@ export class AlkoService {
           alkoService.alkoObj.shift(); // Remove first row of csv
           alkoService.alkoObj = alkoService.insertionSort(alkoService.alkoObj, 'EurPerLAlkohol');
           alkoService.generatePageData();
+          alkoService.loadingSpinnerEnabled = false;
         }
       });
     });

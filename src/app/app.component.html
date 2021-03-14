@@ -1,5 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  <div *ngIf="alkoService.loadingSpinnerEnabled">
+    <h3>LOADING DATA</h3>
+  </div>
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">
       <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Alko.svg" width="30" height="30" class="d-inline-block align-top" alt="">holismi
@@ -10,10 +13,8 @@
       <a style="margin-right: 20px;" href="#" class="alert-link" data-toggle="modal" data-target="#myModal">Valitse alko</a>
       <a style="margin-right: 20px;" href="https://github.com/olahepelto/alko-app" class="alert-link">Github</a>
       <a *ngIf="!alkoService.mobileEnabled" style="margin-right: 20px;" href="#" class="alert-link" (click)="alkoService.toggleBetaMode()">Beta version</a>
-      <a style="margin-right: 20px;" href="#" class="alert-link" (click)="alkoService.toggleAlkoMode()">{{alkoService.superAlkoEnabled ? "Alko" : "Super Alko"}}</a>
     </span>
   </nav>
-
   <app-alkolist></app-alkolist>
   Tämän nettisivun on koodastellut Otto Lähepelto 12.7.2018. <a href="https://github.com/olahepelto/alko-app">Github
   projekti</a>
